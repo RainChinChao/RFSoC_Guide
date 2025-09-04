@@ -1,0 +1,807 @@
+
+*** Running vivado
+    with args -log design_1_CAMC_0_44.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_CAMC_0_44.tcl
+
+
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Mon Dec 16 15:26:42 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_CAMC_0_44.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 656.781 ; gain = 201.457
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/elx22yz/Desktop/RFSoC/Vivado/HLS'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx-2024.1/Vivado/2024.1/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.cache/ip 
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_CAMC_0_44
+Command: synth_design -top design_1_CAMC_0_44 -part xczu48dr-ffvg1517-2-e -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu48dr'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu48dr'
+INFO: [Device 21-403] Loading part xczu48dr-ffvg1517-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 42584
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 2172.660 ; gain = 382.641
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_CAMC_0_44' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ip/design_1_CAMC_0_44/synth/design_1_CAMC_0_44.v:53]
+INFO: [Synth 8-6157] synthesizing module 'CAMC' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC.v:9]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_weights_test_RAM_AUTO_1R1W' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_weights_test_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-3876] $readmem data file './CAMC_weights_test_RAM_AUTO_1R1W.dat' is read successfully [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_weights_test_RAM_AUTO_1R1W.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_weights_test_RAM_AUTO_1R1W' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_weights_test_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_clear_array_x_RAM_AUTO_1R1W' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_clear_array_x_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-3876] $readmem data file './CAMC_clear_array_x_RAM_AUTO_1R1W.dat' is read successfully [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_clear_array_x_RAM_AUTO_1R1W.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_clear_array_x_RAM_AUTO_1R1W' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_clear_array_x_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_max_RAM_AUTO_1R1W' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_max_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_max_RAM_AUTO_1R1W' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_max_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_CAMC_Pipeline_VITIS_LOOP_446_1' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_CAMC_Pipeline_VITIS_LOOP_446_1.v:9]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-6157] synthesizing module 'CAMC_Axis_Initialisation' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_Axis_Initialisation.v:9]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_dmul_64ns_64ns_64_5_max_dsp_0' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_dmul_64ns_64ns_64_5_max_dsp_0.v:9]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_dmul_64ns_64ns_64_5_max_dsp_0_ip' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/ip/CAMC_dmul_64ns_64ns_64_5_max_dsp_0_ip.v:53]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [C:/Xilinx-2024.1/Vivado/2024.1/scripts/rt/data/unisim_comp_diablo.v:82717]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (0#1) [C:/Xilinx-2024.1/Vivado/2024.1/scripts/rt/data/unisim_comp_diablo.v:82717]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_dmul_64ns_64ns_64_5_max_dsp_0_ip' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/ip/CAMC_dmul_64ns_64ns_64_5_max_dsp_0_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_dmul_64ns_64ns_64_5_max_dsp_0' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_dmul_64ns_64ns_64_5_max_dsp_0.v:9]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_dcmp_64ns_64ns_1_2_no_dsp_0' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_dcmp_64ns_64ns_1_2_no_dsp_0.v:9]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_dcmp_64ns_64ns_1_2_no_dsp_0_ip' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/ip/CAMC_dcmp_64ns_64ns_1_2_no_dsp_0_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_dcmp_64ns_64ns_1_2_no_dsp_0_ip' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/ip/CAMC_dcmp_64ns_64ns_1_2_no_dsp_0_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_dcmp_64ns_64ns_1_2_no_dsp_0' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_dcmp_64ns_64ns_1_2_no_dsp_0.v:9]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_sitodp_64ns_64_4_no_dsp_0' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_sitodp_64ns_64_4_no_dsp_0.v:9]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_sitodp_64ns_64_4_no_dsp_0_ip' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/ip/CAMC_sitodp_64ns_64_4_no_dsp_0_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_sitodp_64ns_64_4_no_dsp_0_ip' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/ip/CAMC_sitodp_64ns_64_4_no_dsp_0_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_sitodp_64ns_64_4_no_dsp_0' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_sitodp_64ns_64_4_no_dsp_0.v:9]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_sparsemux_9_3_20_1_0' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_sparsemux_9_3_20_1_0.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_sparsemux_9_3_20_1_0' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_sparsemux_9_3_20_1_0.v:9]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_sparsemux_7_2_7_1_0' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_sparsemux_7_2_7_1_0.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_sparsemux_7_2_7_1_0' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_sparsemux_7_2_7_1_0.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_Axis_Initialisation' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_Axis_Initialisation.v:9]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_mac_muladd_8s_7ns_7ns_14_4_1' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_8s_7ns_7ns_14_4_1.v:55]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_mac_muladd_8s_7ns_7ns_14_4_1_DSP48_0' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_8s_7ns_7ns_14_4_1.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_mac_muladd_8s_7ns_7ns_14_4_1_DSP48_0' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_8s_7ns_7ns_14_4_1.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_mac_muladd_8s_7ns_7ns_14_4_1' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_8s_7ns_7ns_14_4_1.v:55]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_flow_control_loop_pipe_sequential_init' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_flow_control_loop_pipe_sequential_init' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_CAMC_Pipeline_VITIS_LOOP_446_1' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_CAMC_Pipeline_VITIS_LOOP_446_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_ArrayProduct' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct.v:9]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_181_1' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_181_1.v:9]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-6157] synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_181_1_Lite_2PSK_weight_X_10_ROM_AUTO_1R' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_181_1_Lite_2PSK_weight_X_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './CAMC_ArrayProduct_Pipeline_VITIS_LOOP_181_1_Lite_2PSK_weight_X_10_ROM_AUTO_1R.dat' is read successfully [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_181_1_Lite_2PSK_weight_X_10_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_181_1_Lite_2PSK_weight_X_10_ROM_AUTO_1R' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_181_1_Lite_2PSK_weight_X_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_181_1_Lite_2PSK_weight_Y_10_ROM_AUTO_1R' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_181_1_Lite_2PSK_weight_Y_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './CAMC_ArrayProduct_Pipeline_VITIS_LOOP_181_1_Lite_2PSK_weight_Y_10_ROM_AUTO_1R.dat' is read successfully [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_181_1_Lite_2PSK_weight_Y_10_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_181_1_Lite_2PSK_weight_Y_10_ROM_AUTO_1R' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_181_1_Lite_2PSK_weight_Y_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_181_1_Lite_2PSK_weight_10_ROM_AUTO_1R' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_181_1_Lite_2PSK_weight_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './CAMC_ArrayProduct_Pipeline_VITIS_LOOP_181_1_Lite_2PSK_weight_10_ROM_AUTO_1R.dat' is read successfully [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_181_1_Lite_2PSK_weight_10_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_181_1_Lite_2PSK_weight_10_ROM_AUTO_1R' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_181_1_Lite_2PSK_weight_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_mac_muladd_7ns_6ns_6ns_13_4_1' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1.v:55]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_mac_muladd_7ns_6ns_6ns_13_4_1_DSP48_0' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_mac_muladd_7ns_6ns_6ns_13_4_1_DSP48_0' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_mac_muladd_7ns_6ns_6ns_13_4_1' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1.v:55]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_mac_muladd_14ns_11ns_31ns_31_4_1' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_14ns_11ns_31ns_31_4_1.v:55]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_mac_muladd_14ns_11ns_31ns_31_4_1_DSP48_0' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_14ns_11ns_31ns_31_4_1.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_mac_muladd_14ns_11ns_31ns_31_4_1_DSP48_0' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_14ns_11ns_31ns_31_4_1.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_mac_muladd_14ns_11ns_31ns_31_4_1' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_14ns_11ns_31ns_31_4_1.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_181_1' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_181_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_187_2' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_187_2.v:9]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-6157] synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_187_2_Lite_2PSK_45m_weight_X_10_ROM_AUTO_1R' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_187_2_Lite_2PSK_45m_weight_X_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './CAMC_ArrayProduct_Pipeline_VITIS_LOOP_187_2_Lite_2PSK_45m_weight_X_10_ROM_AUTO_1R.dat' is read successfully [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_187_2_Lite_2PSK_45m_weight_X_10_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_187_2_Lite_2PSK_45m_weight_X_10_ROM_AUTO_1R' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_187_2_Lite_2PSK_45m_weight_X_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_187_2_Lite_2PSK_45m_weight_Y_10_ROM_AUTO_1R' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_187_2_Lite_2PSK_45m_weight_Y_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './CAMC_ArrayProduct_Pipeline_VITIS_LOOP_187_2_Lite_2PSK_45m_weight_Y_10_ROM_AUTO_1R.dat' is read successfully [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_187_2_Lite_2PSK_45m_weight_Y_10_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_187_2_Lite_2PSK_45m_weight_Y_10_ROM_AUTO_1R' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_187_2_Lite_2PSK_45m_weight_Y_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_187_2_Lite_2PSK_45m_weight_10_ROM_AUTO_1R' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_187_2_Lite_2PSK_45m_weight_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './CAMC_ArrayProduct_Pipeline_VITIS_LOOP_187_2_Lite_2PSK_45m_weight_10_ROM_AUTO_1R.dat' is read successfully [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_187_2_Lite_2PSK_45m_weight_10_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_187_2_Lite_2PSK_45m_weight_10_ROM_AUTO_1R' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_187_2_Lite_2PSK_45m_weight_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_187_2' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_187_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_193_3' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_193_3.v:9]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-6157] synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_193_3_Lite_2PSK_45p_weight_X_10_ROM_AUTO_1R' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_193_3_Lite_2PSK_45p_weight_X_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './CAMC_ArrayProduct_Pipeline_VITIS_LOOP_193_3_Lite_2PSK_45p_weight_X_10_ROM_AUTO_1R.dat' is read successfully [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_193_3_Lite_2PSK_45p_weight_X_10_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_193_3_Lite_2PSK_45p_weight_X_10_ROM_AUTO_1R' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_193_3_Lite_2PSK_45p_weight_X_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_193_3_Lite_2PSK_45p_weight_Y_10_ROM_AUTO_1R' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_193_3_Lite_2PSK_45p_weight_Y_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './CAMC_ArrayProduct_Pipeline_VITIS_LOOP_193_3_Lite_2PSK_45p_weight_Y_10_ROM_AUTO_1R.dat' is read successfully [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_193_3_Lite_2PSK_45p_weight_Y_10_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_193_3_Lite_2PSK_45p_weight_Y_10_ROM_AUTO_1R' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_193_3_Lite_2PSK_45p_weight_Y_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_193_3_Lite_2PSK_45p_weight_10_ROM_AUTO_1R' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_193_3_Lite_2PSK_45p_weight_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './CAMC_ArrayProduct_Pipeline_VITIS_LOOP_193_3_Lite_2PSK_45p_weight_10_ROM_AUTO_1R.dat' is read successfully [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_193_3_Lite_2PSK_45p_weight_10_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_193_3_Lite_2PSK_45p_weight_10_ROM_AUTO_1R' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_193_3_Lite_2PSK_45p_weight_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_193_3' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_193_3.v:9]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_200_4' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_200_4.v:9]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-6157] synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_200_4_Lite_2PSK_90p_weight_X_10_ROM_AUTO_1R' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_200_4_Lite_2PSK_90p_weight_X_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './CAMC_ArrayProduct_Pipeline_VITIS_LOOP_200_4_Lite_2PSK_90p_weight_X_10_ROM_AUTO_1R.dat' is read successfully [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_200_4_Lite_2PSK_90p_weight_X_10_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_200_4_Lite_2PSK_90p_weight_X_10_ROM_AUTO_1R' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_200_4_Lite_2PSK_90p_weight_X_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_200_4_Lite_2PSK_90p_weight_Y_10_ROM_AUTO_1R' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_200_4_Lite_2PSK_90p_weight_Y_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './CAMC_ArrayProduct_Pipeline_VITIS_LOOP_200_4_Lite_2PSK_90p_weight_Y_10_ROM_AUTO_1R.dat' is read successfully [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_200_4_Lite_2PSK_90p_weight_Y_10_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_200_4_Lite_2PSK_90p_weight_Y_10_ROM_AUTO_1R' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_200_4_Lite_2PSK_90p_weight_Y_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_200_4_Lite_2PSK_90p_weight_10_ROM_AUTO_1R' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_200_4_Lite_2PSK_90p_weight_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './CAMC_ArrayProduct_Pipeline_VITIS_LOOP_200_4_Lite_2PSK_90p_weight_10_ROM_AUTO_1R.dat' is read successfully [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_200_4_Lite_2PSK_90p_weight_10_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_200_4_Lite_2PSK_90p_weight_10_ROM_AUTO_1R' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_200_4_Lite_2PSK_90p_weight_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_200_4' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_200_4.v:9]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_211_5' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_211_5.v:9]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-6157] synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_211_5_Lite_4PSK_weight_X_10_ROM_AUTO_1R' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_211_5_Lite_4PSK_weight_X_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './CAMC_ArrayProduct_Pipeline_VITIS_LOOP_211_5_Lite_4PSK_weight_X_10_ROM_AUTO_1R.dat' is read successfully [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_211_5_Lite_4PSK_weight_X_10_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_211_5_Lite_4PSK_weight_X_10_ROM_AUTO_1R' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_211_5_Lite_4PSK_weight_X_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_211_5_Lite_4PSK_weight_Y_10_ROM_AUTO_1R' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_211_5_Lite_4PSK_weight_Y_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './CAMC_ArrayProduct_Pipeline_VITIS_LOOP_211_5_Lite_4PSK_weight_Y_10_ROM_AUTO_1R.dat' is read successfully [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_211_5_Lite_4PSK_weight_Y_10_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_211_5_Lite_4PSK_weight_Y_10_ROM_AUTO_1R' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_211_5_Lite_4PSK_weight_Y_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_211_5_Lite_4PSK_weight_10_ROM_AUTO_1R' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_211_5_Lite_4PSK_weight_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './CAMC_ArrayProduct_Pipeline_VITIS_LOOP_211_5_Lite_4PSK_weight_10_ROM_AUTO_1R.dat' is read successfully [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_211_5_Lite_4PSK_weight_10_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_211_5_Lite_4PSK_weight_10_ROM_AUTO_1R' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_211_5_Lite_4PSK_weight_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_mac_muladd_14ns_10ns_31ns_31_4_1' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_14ns_10ns_31ns_31_4_1.v:55]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_mac_muladd_14ns_10ns_31ns_31_4_1_DSP48_0' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_14ns_10ns_31ns_31_4_1.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_mac_muladd_14ns_10ns_31ns_31_4_1_DSP48_0' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_14ns_10ns_31ns_31_4_1.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_mac_muladd_14ns_10ns_31ns_31_4_1' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_14ns_10ns_31ns_31_4_1.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_211_5' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_211_5.v:9]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_216_6' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_216_6.v:9]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-6157] synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_216_6_Lite_4PSK_45m_weight_X_10_ROM_AUTO_1R' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_216_6_Lite_4PSK_45m_weight_X_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './CAMC_ArrayProduct_Pipeline_VITIS_LOOP_216_6_Lite_4PSK_45m_weight_X_10_ROM_AUTO_1R.dat' is read successfully [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_216_6_Lite_4PSK_45m_weight_X_10_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_216_6_Lite_4PSK_45m_weight_X_10_ROM_AUTO_1R' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_216_6_Lite_4PSK_45m_weight_X_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_216_6_Lite_4PSK_45m_weight_Y_10_ROM_AUTO_1R' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_216_6_Lite_4PSK_45m_weight_Y_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './CAMC_ArrayProduct_Pipeline_VITIS_LOOP_216_6_Lite_4PSK_45m_weight_Y_10_ROM_AUTO_1R.dat' is read successfully [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_216_6_Lite_4PSK_45m_weight_Y_10_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_216_6_Lite_4PSK_45m_weight_Y_10_ROM_AUTO_1R' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_216_6_Lite_4PSK_45m_weight_Y_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_216_6_Lite_4PSK_45m_weight_10_ROM_AUTO_1R' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_216_6_Lite_4PSK_45m_weight_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './CAMC_ArrayProduct_Pipeline_VITIS_LOOP_216_6_Lite_4PSK_45m_weight_10_ROM_AUTO_1R.dat' is read successfully [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_216_6_Lite_4PSK_45m_weight_10_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_216_6_Lite_4PSK_45m_weight_10_ROM_AUTO_1R' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_216_6_Lite_4PSK_45m_weight_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_216_6' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_216_6.v:9]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_231_7' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_231_7.v:9]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-6157] synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_231_7_Lite_8PSK_weight_X_10_ROM_AUTO_1R' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_231_7_Lite_8PSK_weight_X_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './CAMC_ArrayProduct_Pipeline_VITIS_LOOP_231_7_Lite_8PSK_weight_X_10_ROM_AUTO_1R.dat' is read successfully [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_231_7_Lite_8PSK_weight_X_10_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_231_7_Lite_8PSK_weight_X_10_ROM_AUTO_1R' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_231_7_Lite_8PSK_weight_X_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_231_7_Lite_8PSK_weight_Y_10_ROM_AUTO_1R' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_231_7_Lite_8PSK_weight_Y_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './CAMC_ArrayProduct_Pipeline_VITIS_LOOP_231_7_Lite_8PSK_weight_Y_10_ROM_AUTO_1R.dat' is read successfully [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_231_7_Lite_8PSK_weight_Y_10_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_231_7_Lite_8PSK_weight_Y_10_ROM_AUTO_1R' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_231_7_Lite_8PSK_weight_Y_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_231_7_Lite_8PSK_weight_10_ROM_AUTO_1R' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_231_7_Lite_8PSK_weight_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './CAMC_ArrayProduct_Pipeline_VITIS_LOOP_231_7_Lite_8PSK_weight_10_ROM_AUTO_1R.dat' is read successfully [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_231_7_Lite_8PSK_weight_10_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_231_7_Lite_8PSK_weight_10_ROM_AUTO_1R' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_231_7_Lite_8PSK_weight_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_mac_muladd_14ns_9ns_31ns_31_4_1' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_14ns_9ns_31ns_31_4_1.v:55]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_mac_muladd_14ns_9ns_31ns_31_4_1_DSP48_0' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_14ns_9ns_31ns_31_4_1.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_mac_muladd_14ns_9ns_31ns_31_4_1_DSP48_0' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_14ns_9ns_31ns_31_4_1.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_mac_muladd_14ns_9ns_31ns_31_4_1' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_14ns_9ns_31ns_31_4_1.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_231_7' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_231_7.v:9]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_235_8' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_235_8.v:9]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-6157] synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_235_8_Lite_8PSK_45m_weight_X_10_ROM_AUTO_1R' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_235_8_Lite_8PSK_45m_weight_X_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './CAMC_ArrayProduct_Pipeline_VITIS_LOOP_235_8_Lite_8PSK_45m_weight_X_10_ROM_AUTO_1R.dat' is read successfully [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_235_8_Lite_8PSK_45m_weight_X_10_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_235_8_Lite_8PSK_45m_weight_X_10_ROM_AUTO_1R' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_235_8_Lite_8PSK_45m_weight_X_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_235_8_Lite_8PSK_45m_weight_Y_10_ROM_AUTO_1R' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_235_8_Lite_8PSK_45m_weight_Y_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './CAMC_ArrayProduct_Pipeline_VITIS_LOOP_235_8_Lite_8PSK_45m_weight_Y_10_ROM_AUTO_1R.dat' is read successfully [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_235_8_Lite_8PSK_45m_weight_Y_10_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_235_8_Lite_8PSK_45m_weight_Y_10_ROM_AUTO_1R' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_235_8_Lite_8PSK_45m_weight_Y_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_235_8_Lite_8PSK_45m_weight_10_ROM_AUTO_1R' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_235_8_Lite_8PSK_45m_weight_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './CAMC_ArrayProduct_Pipeline_VITIS_LOOP_235_8_Lite_8PSK_45m_weight_10_ROM_AUTO_1R.dat' is read successfully [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_235_8_Lite_8PSK_45m_weight_10_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_235_8_Lite_8PSK_45m_weight_10_ROM_AUTO_1R' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_235_8_Lite_8PSK_45m_weight_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_235_8' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_235_8.v:9]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_250_9' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_250_9.v:9]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-6157] synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_250_9_Lite_16QAM_weight_X_10_ROM_AUTO_1R' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_250_9_Lite_16QAM_weight_X_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './CAMC_ArrayProduct_Pipeline_VITIS_LOOP_250_9_Lite_16QAM_weight_X_10_ROM_AUTO_1R.dat' is read successfully [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_250_9_Lite_16QAM_weight_X_10_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_250_9_Lite_16QAM_weight_X_10_ROM_AUTO_1R' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_250_9_Lite_16QAM_weight_X_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_250_9_Lite_16QAM_weight_Y_10_ROM_AUTO_1R' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_250_9_Lite_16QAM_weight_Y_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './CAMC_ArrayProduct_Pipeline_VITIS_LOOP_250_9_Lite_16QAM_weight_Y_10_ROM_AUTO_1R.dat' is read successfully [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_250_9_Lite_16QAM_weight_Y_10_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_250_9_Lite_16QAM_weight_Y_10_ROM_AUTO_1R' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_250_9_Lite_16QAM_weight_Y_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_250_9_Lite_16QAM_weight_10_ROM_AUTO_1R' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_250_9_Lite_16QAM_weight_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './CAMC_ArrayProduct_Pipeline_VITIS_LOOP_250_9_Lite_16QAM_weight_10_ROM_AUTO_1R.dat' is read successfully [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_250_9_Lite_16QAM_weight_10_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_250_9_Lite_16QAM_weight_10_ROM_AUTO_1R' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_250_9_Lite_16QAM_weight_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_mac_muladd_14ns_9ns_32ns_32_4_1' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_14ns_9ns_32ns_32_4_1.v:55]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_mac_muladd_14ns_9ns_32ns_32_4_1_DSP48_0' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_14ns_9ns_32ns_32_4_1.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_mac_muladd_14ns_9ns_32ns_32_4_1_DSP48_0' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_14ns_9ns_32ns_32_4_1.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_mac_muladd_14ns_9ns_32ns_32_4_1' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_14ns_9ns_32ns_32_4_1.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_250_9' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_250_9.v:9]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_256_10' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_256_10.v:9]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-6157] synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_256_10_Lite_16QAM_45m_weight_X_10_ROM_AUTO_1R' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_256_10_Lite_16QAM_45m_weight_X_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './CAMC_ArrayProduct_Pipeline_VITIS_LOOP_256_10_Lite_16QAM_45m_weight_X_10_ROM_AUTO_1R.dat' is read successfully [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_256_10_Lite_16QAM_45m_weight_X_10_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_256_10_Lite_16QAM_45m_weight_X_10_ROM_AUTO_1R' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_256_10_Lite_16QAM_45m_weight_X_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_256_10_Lite_16QAM_45m_weight_Y_10_ROM_AUTO_1R' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_256_10_Lite_16QAM_45m_weight_Y_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './CAMC_ArrayProduct_Pipeline_VITIS_LOOP_256_10_Lite_16QAM_45m_weight_Y_10_ROM_AUTO_1R.dat' is read successfully [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_256_10_Lite_16QAM_45m_weight_Y_10_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_256_10_Lite_16QAM_45m_weight_Y_10_ROM_AUTO_1R' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_256_10_Lite_16QAM_45m_weight_Y_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_256_10_Lite_16QAM_45m_weight_10_ROM_AUTO_1R' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_256_10_Lite_16QAM_45m_weight_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './CAMC_ArrayProduct_Pipeline_VITIS_LOOP_256_10_Lite_16QAM_45m_weight_10_ROM_AUTO_1R.dat' is read successfully [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_256_10_Lite_16QAM_45m_weight_10_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_256_10_Lite_16QAM_45m_weight_10_ROM_AUTO_1R' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_256_10_Lite_16QAM_45m_weight_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_ArrayProduct_Pipeline_VITIS_LOOP_256_10' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct_Pipeline_VITIS_LOOP_256_10.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_ArrayProduct' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_ArrayProduct.v:9]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_CAMC_Pipeline_VITIS_LOOP_537_2' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_CAMC_Pipeline_VITIS_LOOP_537_2.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_CAMC_Pipeline_VITIS_LOOP_537_2' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_CAMC_Pipeline_VITIS_LOOP_537_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_CAMC_Pipeline_VITIS_LOOP_623_3' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_CAMC_Pipeline_VITIS_LOOP_623_3.v:9]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_mac_muladd_8s_7ns_8s_14_4_1' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_8s_7ns_8s_14_4_1.v:55]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_mac_muladd_8s_7ns_8s_14_4_1_DSP48_0' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_8s_7ns_8s_14_4_1.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_mac_muladd_8s_7ns_8s_14_4_1_DSP48_0' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_8s_7ns_8s_14_4_1.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_mac_muladd_8s_7ns_8s_14_4_1' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_8s_7ns_8s_14_4_1.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_CAMC_Pipeline_VITIS_LOOP_623_3' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_CAMC_Pipeline_VITIS_LOOP_623_3.v:9]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_CTRL_s_axi' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_CTRL_s_axi.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_CTRL_s_axi.v:205]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_CTRL_s_axi' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_CTRL_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_regslice_both' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_regslice_both' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_regslice_both.v:9]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_regslice_both__parameterized0' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_regslice_both__parameterized0' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_regslice_both.v:9]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_regslice_both__parameterized1' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_regslice_both__parameterized1' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_regslice_both.v:9]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_regslice_both__parameterized2' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_regslice_both__parameterized2' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_regslice_both.v:9]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_regslice_both__parameterized3' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_regslice_both__parameterized3' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_regslice_both.v:9]
+INFO: [Synth 8-6157] synthesizing module 'CAMC_regslice_both__parameterized4' [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC_regslice_both__parameterized4' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'CAMC' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_CAMC_0_44' (0#1) [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ip/design_1_CAMC_0_44/synth/design_1_CAMC_0_44.v:53]
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_CTRL_s_axi.v:266]
+WARNING: [Synth 8-7129] Port AWADDR[1] in module CAMC_CTRL_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port AWADDR[0] in module CAMC_CTRL_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[31] in module CAMC_CTRL_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[30] in module CAMC_CTRL_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[29] in module CAMC_CTRL_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[28] in module CAMC_CTRL_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[27] in module CAMC_CTRL_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[26] in module CAMC_CTRL_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[25] in module CAMC_CTRL_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[24] in module CAMC_CTRL_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[23] in module CAMC_CTRL_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[22] in module CAMC_CTRL_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[21] in module CAMC_CTRL_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[20] in module CAMC_CTRL_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[19] in module CAMC_CTRL_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[18] in module CAMC_CTRL_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[17] in module CAMC_CTRL_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[16] in module CAMC_CTRL_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[15] in module CAMC_CTRL_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[14] in module CAMC_CTRL_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst in module CAMC_mac_muladd_8s_7ns_8s_14_4_1_DSP48_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst in module CAMC_mac_muladd_14ns_9ns_32ns_32_4_1_DSP48_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst in module CAMC_mac_muladd_8s_7ns_7ns_14_4_1_DSP48_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module CAMC_ArrayProduct_Pipeline_VITIS_LOOP_256_10_Lite_16QAM_45m_weight_10_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module CAMC_ArrayProduct_Pipeline_VITIS_LOOP_256_10_Lite_16QAM_45m_weight_Y_10_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module CAMC_ArrayProduct_Pipeline_VITIS_LOOP_256_10_Lite_16QAM_45m_weight_X_10_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module CAMC_ArrayProduct_Pipeline_VITIS_LOOP_250_9_Lite_16QAM_weight_10_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module CAMC_ArrayProduct_Pipeline_VITIS_LOOP_250_9_Lite_16QAM_weight_Y_10_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module CAMC_ArrayProduct_Pipeline_VITIS_LOOP_250_9_Lite_16QAM_weight_X_10_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst in module CAMC_mac_muladd_14ns_9ns_31ns_31_4_1_DSP48_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst in module CAMC_mac_muladd_7ns_6ns_6ns_13_4_1_DSP48_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module CAMC_ArrayProduct_Pipeline_VITIS_LOOP_235_8_Lite_8PSK_45m_weight_10_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module CAMC_ArrayProduct_Pipeline_VITIS_LOOP_235_8_Lite_8PSK_45m_weight_Y_10_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module CAMC_ArrayProduct_Pipeline_VITIS_LOOP_235_8_Lite_8PSK_45m_weight_X_10_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module CAMC_ArrayProduct_Pipeline_VITIS_LOOP_231_7_Lite_8PSK_weight_10_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module CAMC_ArrayProduct_Pipeline_VITIS_LOOP_231_7_Lite_8PSK_weight_Y_10_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module CAMC_ArrayProduct_Pipeline_VITIS_LOOP_231_7_Lite_8PSK_weight_X_10_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst in module CAMC_mac_muladd_14ns_10ns_31ns_31_4_1_DSP48_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module CAMC_ArrayProduct_Pipeline_VITIS_LOOP_216_6_Lite_4PSK_45m_weight_10_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module CAMC_ArrayProduct_Pipeline_VITIS_LOOP_216_6_Lite_4PSK_45m_weight_Y_10_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module CAMC_ArrayProduct_Pipeline_VITIS_LOOP_216_6_Lite_4PSK_45m_weight_X_10_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module CAMC_ArrayProduct_Pipeline_VITIS_LOOP_211_5_Lite_4PSK_weight_10_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module CAMC_ArrayProduct_Pipeline_VITIS_LOOP_211_5_Lite_4PSK_weight_Y_10_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module CAMC_ArrayProduct_Pipeline_VITIS_LOOP_211_5_Lite_4PSK_weight_X_10_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst in module CAMC_mac_muladd_14ns_11ns_31ns_31_4_1_DSP48_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module CAMC_ArrayProduct_Pipeline_VITIS_LOOP_200_4_Lite_2PSK_90p_weight_10_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module CAMC_ArrayProduct_Pipeline_VITIS_LOOP_200_4_Lite_2PSK_90p_weight_Y_10_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module CAMC_ArrayProduct_Pipeline_VITIS_LOOP_200_4_Lite_2PSK_90p_weight_X_10_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module CAMC_ArrayProduct_Pipeline_VITIS_LOOP_193_3_Lite_2PSK_45p_weight_10_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module CAMC_ArrayProduct_Pipeline_VITIS_LOOP_193_3_Lite_2PSK_45p_weight_Y_10_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module CAMC_ArrayProduct_Pipeline_VITIS_LOOP_193_3_Lite_2PSK_45p_weight_X_10_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module CAMC_ArrayProduct_Pipeline_VITIS_LOOP_187_2_Lite_2PSK_45m_weight_10_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module CAMC_ArrayProduct_Pipeline_VITIS_LOOP_187_2_Lite_2PSK_45m_weight_Y_10_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module CAMC_ArrayProduct_Pipeline_VITIS_LOOP_187_2_Lite_2PSK_45m_weight_X_10_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module CAMC_ArrayProduct_Pipeline_VITIS_LOOP_181_1_Lite_2PSK_weight_10_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module CAMC_ArrayProduct_Pipeline_VITIS_LOOP_181_1_Lite_2PSK_weight_Y_10_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module CAMC_ArrayProduct_Pipeline_VITIS_LOOP_181_1_Lite_2PSK_weight_X_10_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_9_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_9_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_9_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_9_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_9_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_9_viv__parameterized39 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_9_viv__parameterized39 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_9_viv__parameterized39 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_9_viv__parameterized39 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_9_viv__parameterized39 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_9_viv__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_9_viv__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_9_viv__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[11] in module flt_dec_op is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[10] in module flt_dec_op is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[9] in module flt_dec_op is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[8] in module flt_dec_op is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DIVIDE_BY_ZERO_IN in module flt_dec_op is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_9_viv__parameterized41 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_9_viv__parameterized41 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_9_viv__parameterized41 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_9_viv__parameterized41 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_9_viv__parameterized41 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[62] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[61] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[60] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[59] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[58] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[57] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[56] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[55] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[54] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[53] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[52] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[51] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[50] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[49] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[48] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[47] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[46] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[45] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[44] in module fix_to_flt_conv_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[43] in module fix_to_flt_conv_exp is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 2410.148 ; gain = 620.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 2410.148 ; gain = 620.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 2410.148 ; gain = 620.129
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.240 . Memory (MB): peak = 2410.148 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 739 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ip/design_1_CAMC_0_44/constraints/CAMC_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ip/design_1_CAMC_0_44/constraints/CAMC_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.runs/design_1_CAMC_0_44_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.runs/design_1_CAMC_0_44_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2501.121 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 1 instance 
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 7 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.181 . Memory (MB): peak = 2507.188 ; gain = 6.066
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:32 . Memory (MB): peak = 2507.188 ; gain = 717.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu48dr-ffvg1517-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:32 . Memory (MB): peak = 2507.188 ; gain = 717.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.runs/design_1_CAMC_0_44_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:32 . Memory (MB): peak = 2507.188 ; gain = 717.168
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'CAMC_CTRL_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'CAMC_CTRL_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'CAMC_regslice_both'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'CAMC_regslice_both__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'CAMC_regslice_both__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'CAMC_regslice_both__parameterized2'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'CAMC_regslice_both__parameterized3'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'CAMC_regslice_both__parameterized4'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-6793] RAM ("CAMC_weights_test_RAM_AUTO_1R1W:/ram_reg") is implemented using BRAM instead of URAM due to insufficient pipeline registers. Available pipeline stages = 0, Minimum required pipeline stages = 1 
+INFO: [Synth 8-5800] Cascade chain of height 4 reduced to 3 because memory depth for RAM "CAMC_weights_test_RAM_AUTO_1R1W:/ram_reg" is not power of 2. 
+INFO: [Synth 8-3971] The signal "CAMC_max_RAM_AUTO_1R1W:/ram_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'CAMC_CTRL_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'CAMC_CTRL_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'CAMC_regslice_both'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'CAMC_regslice_both__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'CAMC_regslice_both__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'CAMC_regslice_both__parameterized2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'CAMC_regslice_both__parameterized3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'CAMC_regslice_both__parameterized4'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:35 . Memory (MB): peak = 2507.188 ; gain = 717.168
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/grp_CAMC_Pipeline_VITIS_LOOP_446_1_fu_362/grp_Axis_Initialisation_fu_281/dmul_64ns_64ns_64_5_max_dsp_0_U1/CAMC_dmul_64ns_64ns_64_5_max_dsp_0_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/EXTRA_LSB_BIT_DEL' (delay__parameterized1) to 'inst/grp_CAMC_Pipeline_VITIS_LOOP_446_1_fu_362/grp_Axis_Initialisation_fu_281/dmul_64ns_64ns_64_5_max_dsp_0_U1/CAMC_dmul_64ns_64ns_64_5_max_dsp_0_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/grp_CAMC_Pipeline_VITIS_LOOP_446_1_fu_362/grp_Axis_Initialisation_fu_281/dmul_64ns_64ns_64_5_max_dsp_0_U1/CAMC_dmul_64ns_64ns_64_5_max_dsp_0_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/EXP_INC_DELAY' (delay__parameterized1) to 'inst/grp_CAMC_Pipeline_VITIS_LOOP_446_1_fu_362/grp_Axis_Initialisation_fu_281/dmul_64ns_64ns_64_5_max_dsp_0_U1/CAMC_dmul_64ns_64ns_64_5_max_dsp_0_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/grp_CAMC_Pipeline_VITIS_LOOP_446_1_fu_362/grp_Axis_Initialisation_fu_281/dmul_64ns_64ns_64_5_max_dsp_0_U1/CAMC_dmul_64ns_64ns_64_5_max_dsp_0_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized20) to 'inst/grp_CAMC_Pipeline_VITIS_LOOP_446_1_fu_362/grp_Axis_Initialisation_fu_281/dmul_64ns_64ns_64_5_max_dsp_0_U1/CAMC_dmul_64ns_64ns_64_5_max_dsp_0_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/grp_CAMC_Pipeline_VITIS_LOOP_446_1_fu_362/grp_Axis_Initialisation_fu_281/dmul_64ns_64ns_64_5_max_dsp_0_U1/CAMC_dmul_64ns_64ns_64_5_max_dsp_0_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized20) to 'inst/grp_CAMC_Pipeline_VITIS_LOOP_446_1_fu_362/grp_Axis_Initialisation_fu_281/dmul_64ns_64ns_64_5_max_dsp_0_U1/CAMC_dmul_64ns_64ns_64_5_max_dsp_0_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/grp_CAMC_Pipeline_VITIS_LOOP_446_1_fu_362/grp_Axis_Initialisation_fu_281/dmul_64ns_64ns_64_5_max_dsp_0_U1/CAMC_dmul_64ns_64ns_64_5_max_dsp_0_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized1) to 'inst/grp_CAMC_Pipeline_VITIS_LOOP_446_1_fu_362/grp_Axis_Initialisation_fu_281/dmul_64ns_64ns_64_5_max_dsp_0_U1/CAMC_dmul_64ns_64ns_64_5_max_dsp_0_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/grp_CAMC_Pipeline_VITIS_LOOP_446_1_fu_362/grp_Axis_Initialisation_fu_281/dmul_64ns_64ns_64_5_max_dsp_0_U1/CAMC_dmul_64ns_64ns_64_5_max_dsp_0_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized1) to 'inst/grp_CAMC_Pipeline_VITIS_LOOP_446_1_fu_362/grp_Axis_Initialisation_fu_281/dmul_64ns_64ns_64_5_max_dsp_0_U1/CAMC_dmul_64ns_64ns_64_5_max_dsp_0_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/grp_CAMC_Pipeline_VITIS_LOOP_446_1_fu_362/grp_Axis_Initialisation_fu_281/dcmp_64ns_64ns_1_2_no_dsp_0_U2/CAMC_dcmp_64ns_64ns_1_2_no_dsp_0_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized1) to 'inst/grp_CAMC_Pipeline_VITIS_LOOP_446_1_fu_362/grp_Axis_Initialisation_fu_281/dcmp_64ns_64ns_1_2_no_dsp_0_U2/CAMC_dcmp_64ns_64ns_1_2_no_dsp_0_ip_u/inst/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/grp_CAMC_Pipeline_VITIS_LOOP_446_1_fu_362/grp_Axis_Initialisation_fu_281/dcmp_64ns_64ns_1_2_no_dsp_0_U2/CAMC_dcmp_64ns_64ns_1_2_no_dsp_0_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized1) to 'inst/grp_CAMC_Pipeline_VITIS_LOOP_446_1_fu_362/grp_Axis_Initialisation_fu_281/dcmp_64ns_64ns_1_2_no_dsp_0_U2/CAMC_dcmp_64ns_64ns_1_2_no_dsp_0_ip_u/inst/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/grp_CAMC_Pipeline_VITIS_LOOP_446_1_fu_362/grp_Axis_Initialisation_fu_281/dcmp_64ns_64ns_1_2_no_dsp_0_U2/CAMC_dcmp_64ns_64ns_1_2_no_dsp_0_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized1) to 'inst/grp_CAMC_Pipeline_VITIS_LOOP_446_1_fu_362/grp_Axis_Initialisation_fu_281/dcmp_64ns_64ns_1_2_no_dsp_0_U2/CAMC_dcmp_64ns_64ns_1_2_no_dsp_0_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/grp_CAMC_Pipeline_VITIS_LOOP_446_1_fu_362/grp_Axis_Initialisation_fu_281/dcmp_64ns_64ns_1_2_no_dsp_0_U2/CAMC_dcmp_64ns_64ns_1_2_no_dsp_0_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized1) to 'inst/grp_CAMC_Pipeline_VITIS_LOOP_446_1_fu_362/grp_Axis_Initialisation_fu_281/dcmp_64ns_64ns_1_2_no_dsp_0_U2/CAMC_dcmp_64ns_64ns_1_2_no_dsp_0_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'CAMC_sitodp_64ns_64_4_no_dsp_0:/CAMC_sitodp_64ns_64_4_no_dsp_0_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized1) to 'CAMC_sitodp_64ns_64_4_no_dsp_0:/CAMC_sitodp_64ns_64_4_no_dsp_0_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'CAMC_sitodp_64ns_64_4_no_dsp_0:/CAMC_sitodp_64ns_64_4_no_dsp_0_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized1) to 'CAMC_sitodp_64ns_64_4_no_dsp_0:/CAMC_sitodp_64ns_64_4_no_dsp_0_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'CAMC_sitodp_64ns_64_4_no_dsp_0:/CAMC_sitodp_64ns_64_4_no_dsp_0_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized20) to 'CAMC_sitodp_64ns_64_4_no_dsp_0:/CAMC_sitodp_64ns_64_4_no_dsp_0_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'CAMC_sitodp_64ns_64_4_no_dsp_0:/CAMC_sitodp_64ns_64_4_no_dsp_0_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized20) to 'CAMC_sitodp_64ns_64_4_no_dsp_0:/CAMC_sitodp_64ns_64_4_no_dsp_0_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'CAMC_sitodp_64ns_64_4_no_dsp_0:/CAMC_sitodp_64ns_64_4_no_dsp_0_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized1) to 'CAMC_sitodp_64ns_64_4_no_dsp_0:/CAMC_sitodp_64ns_64_4_no_dsp_0_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'CAMC_sitodp_64ns_64_4_no_dsp_0:/CAMC_sitodp_64ns_64_4_no_dsp_0_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized1) to 'CAMC_sitodp_64ns_64_4_no_dsp_0:/CAMC_sitodp_64ns_64_4_no_dsp_0_ip_u/inst/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'CAMC_sitodp_64ns_64_4_no_dsp_0:/CAMC_sitodp_64ns_64_4_no_dsp_0_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized1) to 'CAMC_sitodp_64ns_64_4_no_dsp_0:/CAMC_sitodp_64ns_64_4_no_dsp_0_ip_u/inst/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'CAMC_sitodp_64ns_64_4_no_dsp_0:/CAMC_sitodp_64ns_64_4_no_dsp_0_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized1) to 'CAMC_sitodp_64ns_64_4_no_dsp_0:/CAMC_sitodp_64ns_64_4_no_dsp_0_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'CAMC_sitodp_64ns_64_4_no_dsp_0:/CAMC_sitodp_64ns_64_4_no_dsp_0_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized1) to 'CAMC_sitodp_64ns_64_4_no_dsp_0:/CAMC_sitodp_64ns_64_4_no_dsp_0_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 4272 (col length:192)
+BRAMs: 2160 (col length: RAMB18 192 RAMB36 96)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3936] Found unconnected internal register 'axis_final_2_reg_1267_reg' and it is trimmed from '20' to '19' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_Axis_Initialisation.v:398]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8s_7ns_7ns_14_4_1_U14/CAMC_mac_muladd_8s_7ns_7ns_14_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '46' to '14' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_8s_7ns_7ns_14_4_1.v:45]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8s_7ns_7ns_14_4_1_U14/CAMC_mac_muladd_8s_7ns_7ns_14_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '45' to '14' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_8s_7ns_7ns_14_4_1.v:37]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8s_7ns_7ns_14_4_1_U14/CAMC_mac_muladd_8s_7ns_7ns_14_4_1_DSP48_0_U/a_reg_reg' and it is trimmed from '27' to '14' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_8s_7ns_7ns_14_4_1.v:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_14ns_11ns_31ns_31_4_1_U49/CAMC_mac_muladd_14ns_11ns_31ns_31_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '46' to '31' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_14ns_11ns_31ns_31_4_1.v:45]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_14ns_11ns_31ns_31_4_1_U49/CAMC_mac_muladd_14ns_11ns_31ns_31_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '45' to '31' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_14ns_11ns_31ns_31_4_1.v:37]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_7ns_6ns_6ns_13_4_1_U48/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '46' to '13' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1.v:45]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_7ns_6ns_6ns_13_4_1_U48/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '45' to '13' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1.v:37]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_7ns_6ns_6ns_13_4_1_U48/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1_DSP48_0_U/b_reg_reg' and it is trimmed from '18' to '13' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1.v:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_14ns_11ns_31ns_31_4_1_U58/CAMC_mac_muladd_14ns_11ns_31ns_31_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '46' to '31' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_14ns_11ns_31ns_31_4_1.v:45]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_14ns_11ns_31ns_31_4_1_U58/CAMC_mac_muladd_14ns_11ns_31ns_31_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '45' to '31' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_14ns_11ns_31ns_31_4_1.v:37]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_7ns_6ns_6ns_13_4_1_U57/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '46' to '13' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1.v:45]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_7ns_6ns_6ns_13_4_1_U57/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '45' to '13' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1.v:37]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_7ns_6ns_6ns_13_4_1_U57/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1_DSP48_0_U/b_reg_reg' and it is trimmed from '18' to '13' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1.v:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_14ns_11ns_31ns_31_4_1_U65/CAMC_mac_muladd_14ns_11ns_31ns_31_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '46' to '31' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_14ns_11ns_31ns_31_4_1.v:45]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_14ns_11ns_31ns_31_4_1_U65/CAMC_mac_muladd_14ns_11ns_31ns_31_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '45' to '31' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_14ns_11ns_31ns_31_4_1.v:37]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_7ns_6ns_6ns_13_4_1_U64/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '46' to '13' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1.v:45]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_7ns_6ns_6ns_13_4_1_U64/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '45' to '13' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1.v:37]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_7ns_6ns_6ns_13_4_1_U64/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1_DSP48_0_U/b_reg_reg' and it is trimmed from '18' to '13' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1.v:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_14ns_11ns_31ns_31_4_1_U72/CAMC_mac_muladd_14ns_11ns_31ns_31_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '46' to '31' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_14ns_11ns_31ns_31_4_1.v:45]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_14ns_11ns_31ns_31_4_1_U72/CAMC_mac_muladd_14ns_11ns_31ns_31_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '45' to '31' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_14ns_11ns_31ns_31_4_1.v:37]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_7ns_6ns_6ns_13_4_1_U71/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '46' to '13' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1.v:45]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_7ns_6ns_6ns_13_4_1_U71/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '45' to '13' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1.v:37]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_7ns_6ns_6ns_13_4_1_U71/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1_DSP48_0_U/b_reg_reg' and it is trimmed from '18' to '13' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1.v:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_14ns_10ns_31ns_31_4_1_U79/CAMC_mac_muladd_14ns_10ns_31ns_31_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '46' to '31' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_14ns_10ns_31ns_31_4_1.v:45]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_14ns_10ns_31ns_31_4_1_U79/CAMC_mac_muladd_14ns_10ns_31ns_31_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '45' to '31' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_14ns_10ns_31ns_31_4_1.v:37]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_7ns_6ns_6ns_13_4_1_U78/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '46' to '13' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1.v:45]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_7ns_6ns_6ns_13_4_1_U78/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '45' to '13' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1.v:37]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_7ns_6ns_6ns_13_4_1_U78/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1_DSP48_0_U/b_reg_reg' and it is trimmed from '18' to '13' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1.v:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_14ns_10ns_31ns_31_4_1_U87/CAMC_mac_muladd_14ns_10ns_31ns_31_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '46' to '31' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_14ns_10ns_31ns_31_4_1.v:45]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_14ns_10ns_31ns_31_4_1_U87/CAMC_mac_muladd_14ns_10ns_31ns_31_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '45' to '31' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_14ns_10ns_31ns_31_4_1.v:37]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_7ns_6ns_6ns_13_4_1_U86/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '46' to '13' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1.v:45]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_7ns_6ns_6ns_13_4_1_U86/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '45' to '13' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1.v:37]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_7ns_6ns_6ns_13_4_1_U86/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1_DSP48_0_U/b_reg_reg' and it is trimmed from '18' to '13' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1.v:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_14ns_9ns_31ns_31_4_1_U94/CAMC_mac_muladd_14ns_9ns_31ns_31_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '46' to '31' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_14ns_9ns_31ns_31_4_1.v:45]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_14ns_9ns_31ns_31_4_1_U94/CAMC_mac_muladd_14ns_9ns_31ns_31_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '45' to '31' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_14ns_9ns_31ns_31_4_1.v:37]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_7ns_6ns_6ns_13_4_1_U93/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '46' to '13' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1.v:45]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_7ns_6ns_6ns_13_4_1_U93/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '45' to '13' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1.v:37]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_7ns_6ns_6ns_13_4_1_U93/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1_DSP48_0_U/b_reg_reg' and it is trimmed from '18' to '13' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1.v:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_14ns_9ns_31ns_31_4_1_U102/CAMC_mac_muladd_14ns_9ns_31ns_31_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '46' to '31' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_14ns_9ns_31ns_31_4_1.v:45]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_14ns_9ns_31ns_31_4_1_U102/CAMC_mac_muladd_14ns_9ns_31ns_31_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '45' to '31' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_14ns_9ns_31ns_31_4_1.v:37]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_7ns_6ns_6ns_13_4_1_U101/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '46' to '13' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1.v:45]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_7ns_6ns_6ns_13_4_1_U101/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '45' to '13' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1.v:37]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_7ns_6ns_6ns_13_4_1_U101/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1_DSP48_0_U/b_reg_reg' and it is trimmed from '18' to '13' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1.v:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_14ns_9ns_32ns_32_4_1_U109/CAMC_mac_muladd_14ns_9ns_32ns_32_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_14ns_9ns_32ns_32_4_1.v:45]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_14ns_9ns_32ns_32_4_1_U109/CAMC_mac_muladd_14ns_9ns_32ns_32_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '45' to '32' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_14ns_9ns_32ns_32_4_1.v:37]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8s_7ns_7ns_14_4_1_U108/CAMC_mac_muladd_8s_7ns_7ns_14_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '46' to '14' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_8s_7ns_7ns_14_4_1.v:45]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8s_7ns_7ns_14_4_1_U108/CAMC_mac_muladd_8s_7ns_7ns_14_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '45' to '14' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_8s_7ns_7ns_14_4_1.v:37]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8s_7ns_7ns_14_4_1_U108/CAMC_mac_muladd_8s_7ns_7ns_14_4_1_DSP48_0_U/a_reg_reg' and it is trimmed from '27' to '14' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_8s_7ns_7ns_14_4_1.v:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_14ns_9ns_32ns_32_4_1_U117/CAMC_mac_muladd_14ns_9ns_32ns_32_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '46' to '32' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_14ns_9ns_32ns_32_4_1.v:45]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_14ns_9ns_32ns_32_4_1_U117/CAMC_mac_muladd_14ns_9ns_32ns_32_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '45' to '32' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_14ns_9ns_32ns_32_4_1.v:37]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8s_7ns_7ns_14_4_1_U116/CAMC_mac_muladd_8s_7ns_7ns_14_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '46' to '14' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_8s_7ns_7ns_14_4_1.v:45]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8s_7ns_7ns_14_4_1_U116/CAMC_mac_muladd_8s_7ns_7ns_14_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '45' to '14' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_8s_7ns_7ns_14_4_1.v:37]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8s_7ns_7ns_14_4_1_U116/CAMC_mac_muladd_8s_7ns_7ns_14_4_1_DSP48_0_U/a_reg_reg' and it is trimmed from '27' to '14' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_8s_7ns_7ns_14_4_1.v:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8s_7ns_8s_14_4_1_U137/CAMC_mac_muladd_8s_7ns_8s_14_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '46' to '14' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_8s_7ns_8s_14_4_1.v:45]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8s_7ns_8s_14_4_1_U137/CAMC_mac_muladd_8s_7ns_8s_14_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '45' to '14' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_8s_7ns_8s_14_4_1.v:37]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8s_7ns_8s_14_4_1_U137/CAMC_mac_muladd_8s_7ns_8s_14_4_1_DSP48_0_U/a_reg_reg' and it is trimmed from '27' to '14' bits. [c:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.gen/sources_1/bd/design_1/ipshared/d104/hdl/verilog/CAMC_mac_muladd_8s_7ns_8s_14_4_1.v:35]
+INFO: [Synth 8-7124] RAM ("inst/weights_test_U/ram_reg") is implemented using BRAM instead of URAM. Memory would be severely underutilized if URAMs are used
+INFO: [Synth 8-5800] Cascade chain of height 4 reduced to 3 because memory depth for RAM "inst/weights_test_U/ram_reg" is not power of 2. 
+INFO: [Synth 8-7124] RAM ("inst/clear_array_x_U/ram_reg") is implemented using BRAM instead of URAM. Memory would be severely underutilized if URAMs are used
+INFO: [Synth 8-7124] RAM ("inst/clear_array_y_U/ram_reg") is implemented using BRAM instead of URAM. Memory would be severely underutilized if URAMs are used
+RAM ("inst/max_U/ram_reg") is too shallow (depth = 10) to use URAM. Choosing BRAM instead of URAM 
+INFO: [Synth 8-3971] The signal "inst/max_U/ram_reg" was recognized as a true dual port RAM template.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module CAMC_CTRL_s_axi.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module CAMC_CTRL_s_axi.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[1]) is unused and will be removed from module CAMC_regslice_both__parameterized0__3.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[0]) is unused and will be removed from module CAMC_regslice_both__parameterized0__3.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[1]) is unused and will be removed from module CAMC_regslice_both__parameterized0__4.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[0]) is unused and will be removed from module CAMC_regslice_both__parameterized0__4.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[1]) is unused and will be removed from module CAMC_regslice_both__parameterized1__2.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[0]) is unused and will be removed from module CAMC_regslice_both__parameterized1__2.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[1]) is unused and will be removed from module CAMC_regslice_both__parameterized2__2.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[0]) is unused and will be removed from module CAMC_regslice_both__parameterized2__2.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[1]) is unused and will be removed from module CAMC_regslice_both__parameterized3__2.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[0]) is unused and will be removed from module CAMC_regslice_both__parameterized3__2.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[1]) is unused and will be removed from module CAMC_regslice_both__parameterized4__2.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[0]) is unused and will be removed from module CAMC_regslice_both__parameterized4__2.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:52 . Memory (MB): peak = 2507.188 ; gain = 717.168
+---------------------------------------------------------------------------------
+ Sort Area is  mac_muladd_14ns_9ns_32ns_32_4_1_U109/CAMC_mac_muladd_14ns_9ns_32ns_32_4_1_DSP48_0_U/p_reg_reg_15 : 0 0 : 3657 3657 : Used 1 time 0
+ Sort Area is  mac_muladd_14ns_9ns_32ns_32_4_1_U117/CAMC_mac_muladd_14ns_9ns_32ns_32_4_1_DSP48_0_U/p_reg_reg_19 : 0 0 : 3657 3657 : Used 1 time 0
+ Sort Area is  mac_muladd_14ns_10ns_31ns_31_4_1_U79/CAMC_mac_muladd_14ns_10ns_31ns_31_4_1_DSP48_0_U/p_reg_reg_d : 0 0 : 3652 3652 : Used 1 time 0
+ Sort Area is  mac_muladd_14ns_10ns_31ns_31_4_1_U87/CAMC_mac_muladd_14ns_10ns_31ns_31_4_1_DSP48_0_U/p_reg_reg_f : 0 0 : 3652 3652 : Used 1 time 0
+ Sort Area is  mac_muladd_14ns_11ns_31ns_31_4_1_U49/CAMC_mac_muladd_14ns_11ns_31ns_31_4_1_DSP48_0_U/p_reg_reg_2 : 0 0 : 3652 3652 : Used 1 time 0
+ Sort Area is  mac_muladd_14ns_11ns_31ns_31_4_1_U58/CAMC_mac_muladd_14ns_11ns_31ns_31_4_1_DSP48_0_U/p_reg_reg_6 : 0 0 : 3652 3652 : Used 1 time 0
+ Sort Area is  mac_muladd_14ns_11ns_31ns_31_4_1_U65/CAMC_mac_muladd_14ns_11ns_31ns_31_4_1_DSP48_0_U/p_reg_reg_8 : 0 0 : 3652 3652 : Used 1 time 0
+ Sort Area is  mac_muladd_14ns_11ns_31ns_31_4_1_U72/CAMC_mac_muladd_14ns_11ns_31ns_31_4_1_DSP48_0_U/p_reg_reg_a : 0 0 : 3652 3652 : Used 1 time 0
+ Sort Area is  mac_muladd_14ns_9ns_31ns_31_4_1_U102/CAMC_mac_muladd_14ns_9ns_31ns_31_4_1_DSP48_0_U/p_reg_reg_13 : 0 0 : 3652 3652 : Used 1 time 0
+ Sort Area is  mac_muladd_14ns_9ns_31ns_31_4_1_U94/CAMC_mac_muladd_14ns_9ns_31ns_31_4_1_DSP48_0_U/p_reg_reg_11 : 0 0 : 3652 3652 : Used 1 time 0
+ Sort Area is  mac_muladd_7ns_6ns_6ns_13_4_1_U101/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1_DSP48_0_U/p_reg_reg_14 : 0 0 : 1378 1378 : Used 1 time 0
+ Sort Area is  mac_muladd_7ns_6ns_6ns_13_4_1_U48/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1_DSP48_0_U/p_reg_reg_4 : 0 0 : 1378 1378 : Used 1 time 0
+ Sort Area is  mac_muladd_7ns_6ns_6ns_13_4_1_U57/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1_DSP48_0_U/p_reg_reg_7 : 0 0 : 1378 1378 : Used 1 time 0
+ Sort Area is  mac_muladd_7ns_6ns_6ns_13_4_1_U64/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1_DSP48_0_U/p_reg_reg_9 : 0 0 : 1378 1378 : Used 1 time 0
+ Sort Area is  mac_muladd_7ns_6ns_6ns_13_4_1_U78/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1_DSP48_0_U/p_reg_reg_e : 0 0 : 1378 1378 : Used 1 time 0
+ Sort Area is  mac_muladd_7ns_6ns_6ns_13_4_1_U86/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1_DSP48_0_U/p_reg_reg_10 : 0 0 : 1378 1378 : Used 1 time 0
+ Sort Area is  mac_muladd_7ns_6ns_6ns_13_4_1_U93/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1_DSP48_0_U/p_reg_reg_12 : 0 0 : 1378 1378 : Used 1 time 0
+ Sort Area is  mac_muladd_8s_7ns_7ns_14_4_1_U14/CAMC_mac_muladd_8s_7ns_7ns_14_4_1_DSP48_0_U/p_reg_reg_0 : 0 0 : 952 952 : Used 1 time 0
+ Sort Area is  mac_muladd_8s_7ns_8s_14_4_1_U137/CAMC_mac_muladd_8s_7ns_8s_14_4_1_DSP48_0_U/p_reg_reg_1b : 0 0 : 951 951 : Used 1 time 0
+ Sort Area is  mac_muladd_8s_7ns_7ns_14_4_1_U108/CAMC_mac_muladd_8s_7ns_7ns_14_4_1_DSP48_0_U/p_reg_reg_17 : 0 0 : 888 888 : Used 1 time 0
+ Sort Area is  mac_muladd_8s_7ns_7ns_14_4_1_U116/CAMC_mac_muladd_8s_7ns_7ns_14_4_1_DSP48_0_U/p_reg_reg_1a : 0 0 : 888 888 : Used 1 time 0
+ Sort Area is  mac_muladd_7ns_6ns_6ns_13_4_1_U71/CAMC_mac_muladd_7ns_6ns_6ns_13_4_1_DSP48_0_U/p_reg_reg_b : 0 0 : 711 711 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:01:00 . Memory (MB): peak = 2796.168 ; gain = 1006.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5556] The block RAM "inst/weights_test_U/ram_reg" may be mapped as a cascade chain, because it is not timing critical.
+INFO: [Synth 8-7124] RAM ("inst/weights_test_U/ram_reg") is implemented using BRAM instead of URAM. Memory would be severely underutilized if URAMs are used
+INFO: [Synth 8-5800] Cascade chain of height 4 reduced to 3 because memory depth for RAM "inst/weights_test_U/ram_reg" is not power of 2. 
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:01:05 . Memory (MB): peak = 2917.711 ; gain = 1127.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/weights_test_U/ram_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/weights_test_U/ram_reg_bram_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/weights_test_U/ram_reg_bram_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/clear_array_x_U/ram_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/clear_array_x_U/ram_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/clear_array_x_U/ram_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/clear_array_y_U/ram_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/clear_array_y_U/ram_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/clear_array_y_U/ram_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/max_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_ArrayProduct_fu_429/grp_ArrayProduct_Pipeline_VITIS_LOOP_231_7_fu_222/Lite_8PSK_weight_X_10_U/q0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_ArrayProduct_fu_429/grp_ArrayProduct_Pipeline_VITIS_LOOP_235_8_fu_235/Lite_8PSK_45m_weight_X_10_U/q0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_ArrayProduct_fu_429/grp_ArrayProduct_Pipeline_VITIS_LOOP_250_9_fu_248/Lite_16QAM_weight_X_10_U/q0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_ArrayProduct_fu_429/grp_ArrayProduct_Pipeline_VITIS_LOOP_256_10_fu_261/Lite_16QAM_45m_weight_X_10_U/q0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:01:08 . Memory (MB): peak = 2927.797 ; gain = 1137.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:01:12 . Memory (MB): peak = 2927.797 ; gain = 1137.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:01:12 . Memory (MB): peak = 2927.797 ; gain = 1137.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:01:12 . Memory (MB): peak = 2927.797 ; gain = 1137.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:01:12 . Memory (MB): peak = 2927.797 ; gain = 1137.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:01:12 . Memory (MB): peak = 2927.797 ; gain = 1137.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:01:12 . Memory (MB): peak = 2927.797 ; gain = 1137.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++---------------------------------------------+-------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                                  | DSP Mapping             | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++---------------------------------------------+-------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|CAMC_ArrayProduct_Pipeline_VITIS_LOOP_181_1  | (C+(A'*B'')')'          | 14     | 11     | 31     | -      | 31     | 1    | 2    | 2    | -    | -     | 1    | 1    | 
+|CAMC_ArrayProduct_Pipeline_VITIS_LOOP_181_1  | (C'+RND+(A'*B')')'      | 6      | 7      | 6      | -      | 13     | 1    | 1    | 1    | -    | -     | 1    | 1    | 
+|CAMC_ArrayProduct_Pipeline_VITIS_LOOP_187_2  | (C+(A'*B'')')'          | 14     | 11     | 31     | -      | 31     | 1    | 2    | 2    | -    | -     | 1    | 1    | 
+|CAMC_ArrayProduct_Pipeline_VITIS_LOOP_187_2  | (C'+RND+(A'*B')')'      | 6      | 7      | 6      | -      | 13     | 1    | 1    | 1    | -    | -     | 1    | 1    | 
+|CAMC_ArrayProduct_Pipeline_VITIS_LOOP_193_3  | (C+(A'*B'')')'          | 14     | 11     | 31     | -      | 31     | 1    | 2    | 2    | -    | -     | 1    | 1    | 
+|CAMC_ArrayProduct_Pipeline_VITIS_LOOP_193_3  | (C'+RND+(A'*B')')'      | 6      | 7      | 6      | -      | 13     | 1    | 1    | 1    | -    | -     | 1    | 1    | 
+|CAMC_ArrayProduct_Pipeline_VITIS_LOOP_200_4  | (C+(A'*B'')')'          | 14     | 11     | 31     | -      | 31     | 1    | 2    | 2    | -    | -     | 1    | 1    | 
+|CAMC_mac_muladd_7ns_6ns_6ns_13_4_1_DSP48_0   | (C'+RND+((D'+A)'*B')')' | 30     | 7      | 6      | -      | 13     | 0    | 1    | 1    | -    | 1     | 1    | 1    | 
+|CAMC_ArrayProduct_Pipeline_VITIS_LOOP_211_5  | (C+(A'*B'')')'          | 14     | 10     | 31     | -      | 31     | 1    | 2    | 2    | -    | -     | 1    | 1    | 
+|CAMC_ArrayProduct_Pipeline_VITIS_LOOP_211_5  | (C'+RND+(A'*B')')'      | 6      | 7      | 6      | -      | 13     | 1    | 1    | 1    | -    | -     | 1    | 1    | 
+|CAMC_ArrayProduct_Pipeline_VITIS_LOOP_216_6  | (C+(A'*B'')')'          | 14     | 10     | 31     | -      | 31     | 1    | 2    | 2    | -    | -     | 1    | 1    | 
+|CAMC_ArrayProduct_Pipeline_VITIS_LOOP_216_6  | (C'+RND+(A'*B')')'      | 6      | 7      | 6      | -      | 13     | 1    | 1    | 1    | -    | -     | 1    | 1    | 
+|CAMC_ArrayProduct_Pipeline_VITIS_LOOP_231_7  | (C+(A'*B'')')'          | 14     | 9      | 31     | -      | 31     | 1    | 2    | 2    | -    | -     | 1    | 1    | 
+|CAMC_ArrayProduct_Pipeline_VITIS_LOOP_231_7  | (C'+RND+(A'*B')')'      | 6      | 7      | 6      | -      | 13     | 1    | 1    | 1    | -    | -     | 1    | 1    | 
+|CAMC_ArrayProduct_Pipeline_VITIS_LOOP_235_8  | (C+(A'*B'')')'          | 14     | 9      | 31     | -      | 31     | 1    | 2    | 2    | -    | -     | 1    | 1    | 
+|CAMC_ArrayProduct_Pipeline_VITIS_LOOP_235_8  | (C'+RND+(A'*B')')'      | 6      | 7      | 6      | -      | 13     | 1    | 1    | 1    | -    | -     | 1    | 1    | 
+|CAMC_ArrayProduct_Pipeline_VITIS_LOOP_250_9  | (C+(A'*B'')')'          | 14     | 9      | 32     | -      | 32     | 1    | 2    | 2    | -    | -     | 1    | 1    | 
+|CAMC_mac_muladd_8s_7ns_7ns_14_4_1_DSP48_0    | (C'+RND+((D+A)'*B')')'  | 30     | 7      | 7      | -      | 14     | 0    | 1    | 1    | -    | 1     | 1    | 1    | 
+|CAMC_ArrayProduct_Pipeline_VITIS_LOOP_256_10 | (C+(A'*B'')')'          | 14     | 9      | 32     | -      | 32     | 1    | 2    | 2    | -    | -     | 1    | 1    | 
+|CAMC_mac_muladd_8s_7ns_7ns_14_4_1_DSP48_0    | (C'+RND+((D+A)'*B')')'  | 30     | 7      | 7      | -      | 14     | 0    | 1    | 1    | -    | 1     | 1    | 1    | 
+|dsp48e2_wrapper                              | A*B                     | 26     | 0      | -      | -      | 17     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e2_wrapper__parameterized0              | PCIN>>17+A*B            | 0      | 0      | -      | -      | 17     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e2_wrapper__parameterized2              | (PCIN>>17+C+A*B)'       | 0      | 0      | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e2_wrapper__parameterized3              | C+A'*B'                 | 26     | 0      | 17     | -      | 17     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
+|dsp48e2_wrapper__parameterized4              | PCIN>>17+C+A*B'         | 0      | 0      | -      | -      | 17     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|dsp48e2_wrapper__parameterized5              | (PCIN>>17+C'+A*B')'     | 0      | 0      | -      | -      | 45     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|dsp48e2_wrapper__parameterized1              | A:B+C                   | 30     | 18     | 0      | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper                              | Dynamic                 | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 0    | 
+|CAMC_CAMC_Pipeline_VITIS_LOOP_446_1          | (C'+RND+(A'*B')')'      | 30     | 7      | 7      | -      | 14     | 1    | 1    | 1    | -    | -     | 1    | 1    | 
+|CAMC_CAMC_Pipeline_VITIS_LOOP_623_3          | (C+(A'*B')')'           | 30     | 7      | 48     | -      | 14     | 1    | 1    | 1    | -    | -     | 1    | 1    | 
++---------------------------------------------+-------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |CARRY8          |    34|
+|2     |DSP48E1         |     1|
+|3     |DSP_ALU         |    29|
+|7     |DSP_A_B_DATA    |    29|
+|13    |DSP_C_DATA      |    29|
+|15    |DSP_MULTIPLIER  |    29|
+|18    |DSP_M_DATA      |    29|
+|20    |DSP_OUTPUT      |    29|
+|25    |DSP_PREADD      |    29|
+|26    |DSP_PREADD_DATA |    29|
+|31    |LUT1            |   118|
+|32    |LUT2            |   223|
+|33    |LUT3            |   912|
+|34    |LUT4            |   707|
+|35    |LUT5            |   387|
+|36    |LUT6            |  1025|
+|37    |MUXCY           |   439|
+|38    |MUXF7           |    30|
+|39    |RAMB18E2        |    17|
+|55    |RAMB36E2        |    12|
+|64    |SRL16E          |   106|
+|65    |XORCY           |   279|
+|66    |FDRE            |  2919|
+|67    |FDSE            |     7|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:01:12 . Memory (MB): peak = 2927.797 ; gain = 1137.777
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 497 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:01:03 . Memory (MB): peak = 2927.797 ; gain = 1040.738
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:01:13 . Memory (MB): peak = 2927.797 ; gain = 1137.777
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.127 . Memory (MB): peak = 2927.797 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 812 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2947.609 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 91 instances were transformed.
+  (CARRY4) => CARRY8: 61 instances
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 1 instance 
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 29 instances
+
+Synth Design complete | Checksum: 42e49fa4
+INFO: [Common 17-83] Releasing license: Synthesis
+281 Infos, 185 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:01:30 . Memory (MB): peak = 2947.609 ; gain = 2238.715
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2947.609 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.runs/design_1_CAMC_0_44_synth_1/design_1_CAMC_0_44.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_CAMC_0_44, cache-ID = e185b101802ec937
+INFO: [Coretcl 2-1174] Renamed 268 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2947.609 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/elx22yz/Desktop/RFSoC/Vivado/VivadoFile/CAMC_Full_128/CAMC_Full_128.runs/design_1_CAMC_0_44_synth_1/design_1_CAMC_0_44.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_CAMC_0_44_utilization_synth.rpt -pb design_1_CAMC_0_44_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 16 15:28:36 2024...

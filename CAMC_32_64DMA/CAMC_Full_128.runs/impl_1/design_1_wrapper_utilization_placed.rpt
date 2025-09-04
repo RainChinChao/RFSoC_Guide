@@ -1,0 +1,564 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Mon Dec 16 17:21:11 2024
+| Host         : UOS4CD717A76674 running 64-bit major release  (build 9200)
+| Command      : report_utilization -file design_1_wrapper_utilization_placed.rpt -pb design_1_wrapper_utilization_placed.pb
+| Design       : design_1_wrapper
+| Device       : xczu48dr-ffvg1517-2-e
+| Speed File   : -2
+| Design State : Fully Placed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. CLB Logic
+1.1 Summary of Registers by Type
+2. CLB Logic Distribution
+3. BLOCKRAM
+4. ARITHMETIC
+5. I/O
+6. CLOCK
+7. ADVANCED
+8. CONFIGURATION
+9. Primitives
+10. Black Boxes
+11. Instantiated Netlists
+
+1. CLB Logic
+------------
+
++----------------------------+--------+-------+------------+-----------+-------+
+|          Site Type         |  Used  | Fixed | Prohibited | Available | Util% |
++----------------------------+--------+-------+------------+-----------+-------+
+| CLB LUTs                   | 350060 |     0 |          0 |    425280 | 82.31 |
+|   LUT as Logic             | 303992 |     0 |          0 |    425280 | 71.48 |
+|   LUT as Memory            |  46068 |     0 |          0 |    213600 | 21.57 |
+|     LUT as Distributed RAM |  30216 |     0 |            |           |       |
+|     LUT as Shift Register  |  15852 |     0 |            |           |       |
+| CLB Registers              | 431015 |     0 |          0 |    850560 | 50.67 |
+|   Register as Flip Flop    | 431015 |     0 |          0 |    850560 | 50.67 |
+|   Register as Latch        |      0 |     0 |          0 |    850560 |  0.00 |
+| CARRY8                     |   3728 |     0 |          0 |     53160 |  7.01 |
+| F7 Muxes                   |   6870 |     0 |          0 |    212640 |  3.23 |
+| F8 Muxes                   |   1015 |     0 |          0 |    106320 |  0.95 |
+| F9 Muxes                   |      0 |     0 |          0 |     53160 |  0.00 |
++----------------------------+--------+-------+------------+-----------+-------+
+* Warning! LUT value is adjusted to account for LUT combining.
+
+
+1.1 Summary of Registers by Type
+--------------------------------
+
++--------+--------------+-------------+--------------+
+|  Total | Clock Enable | Synchronous | Asynchronous |
++--------+--------------+-------------+--------------+
+| 0      |            _ |           - |            - |
+| 0      |            _ |           - |          Set |
+| 0      |            _ |           - |        Reset |
+| 0      |            _ |         Set |            - |
+| 0      |            _ |       Reset |            - |
+| 0      |          Yes |           - |            - |
+| 0      |          Yes |           - |          Set |
+| 2688   |          Yes |           - |        Reset |
+| 14483  |          Yes |         Set |            - |
+| 413844 |          Yes |       Reset |            - |
++--------+--------------+-------------+--------------+
+
+
+2. CLB Logic Distribution
+-------------------------
+
++--------------------------------------------+--------+-------+------------+-----------+-------+
+|                  Site Type                 |  Used  | Fixed | Prohibited | Available | Util% |
++--------------------------------------------+--------+-------+------------+-----------+-------+
+| CLB                                        |  53116 |     0 |          0 |     53160 | 99.92 |
+|   CLBL                                     |  26427 |     0 |            |           |       |
+|   CLBM                                     |  26689 |     0 |            |           |       |
+| LUT as Logic                               | 303992 |     0 |          0 |    425280 | 71.48 |
+|   using O5 output only                     |  13356 |       |            |           |       |
+|   using O6 output only                     | 194511 |       |            |           |       |
+|   using O5 and O6                          |  96125 |       |            |           |       |
+| LUT as Memory                              |  46068 |     0 |          0 |    213600 | 21.57 |
+|   LUT as Distributed RAM                   |  30216 |     0 |            |           |       |
+|     using O5 output only                   |      0 |       |            |           |       |
+|     using O6 output only                   |      0 |       |            |           |       |
+|     using O5 and O6                        |  30216 |       |            |           |       |
+|   LUT as Shift Register                    |  15852 |     0 |            |           |       |
+|     using O5 output only                   |      0 |       |            |           |       |
+|     using O6 output only                   |  11882 |       |            |           |       |
+|     using O5 and O6                        |   3970 |       |            |           |       |
+| CLB Registers                              | 431015 |     0 |          0 |    850560 | 50.67 |
+|   Register driven from within the CLB      | 263489 |       |            |           |       |
+|   Register driven from outside the CLB     | 167526 |       |            |           |       |
+|     LUT in front of the register is unused |  56574 |       |            |           |       |
+|     LUT in front of the register is used   | 110952 |       |            |           |       |
+| Unique Control Sets                        |  26999 |       |          0 |    106320 | 25.39 |
++--------------------------------------------+--------+-------+------------+-----------+-------+
+* * Note: Available Control Sets calculated as Slices * 2, Review the Control Sets Report for more information regarding control sets.
+
+
+3. BLOCKRAM
+-----------
+
++-------------------+------+-------+------------+-----------+-------+
+|     Site Type     | Used | Fixed | Prohibited | Available | Util% |
++-------------------+------+-------+------------+-----------+-------+
+| Block RAM Tile    |  848 |     0 |          0 |      1080 | 78.52 |
+|   RAMB36/FIFO*    |  576 |     0 |          0 |      1080 | 53.33 |
+|     RAMB36E2 only |  576 |       |            |           |       |
+|   RAMB18          |  544 |     0 |          0 |      2160 | 25.19 |
+|     RAMB18E2 only |  544 |       |            |           |       |
+| URAM              |    0 |     0 |          0 |        80 |  0.00 |
++-------------------+------+-------+------------+-----------+-------+
+* Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E2 or one FIFO18E2. However, if a FIFO18E2 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E2
+
+
+4. ARITHMETIC
+-------------
+
++----------------+------+-------+------------+-----------+-------+
+|    Site Type   | Used | Fixed | Prohibited | Available | Util% |
++----------------+------+-------+------------+-----------+-------+
+| DSPs           |  960 |     0 |          0 |      4272 | 22.47 |
+|   DSP48E2 only |  960 |       |            |           |       |
++----------------+------+-------+------------+-----------+-------+
+
+
+5. I/O
+------
+
++------------------+------+-------+------------+-----------+-------+
+|     Site Type    | Used | Fixed | Prohibited | Available | Util% |
++------------------+------+-------+------------+-----------+-------+
+| Bonded IOB       |    0 |     0 |          0 |       347 |  0.00 |
+| HPIOB_M          |    0 |     0 |          0 |       138 |  0.00 |
+| HPIOB_S          |    0 |     0 |          0 |       138 |  0.00 |
+| HDIOB_M          |    0 |     0 |          0 |        24 |  0.00 |
+| HDIOB_S          |    0 |     0 |          0 |        24 |  0.00 |
+| HPIOB_SNGL       |    0 |     0 |          0 |        23 |  0.00 |
+| HPIOBDIFFINBUF   |    0 |     0 |          0 |       192 |  0.00 |
+| HPIOBDIFFOUTBUF  |    0 |     0 |          0 |       192 |  0.00 |
+| HDIOBDIFFINBUF   |    0 |     0 |          0 |        72 |  0.00 |
+| BITSLICE_CONTROL |    0 |     0 |          0 |        64 |  0.00 |
+| BITSLICE_RX_TX   |    0 |     0 |          0 |      2496 |  0.00 |
+| BITSLICE_TX      |    0 |     0 |          0 |        64 |  0.00 |
+| RIU_OR           |    0 |     0 |          0 |        32 |  0.00 |
+| RF_ADC           |    0 |     0 |          4 |         4 |  0.00 |
+| RF_DAC           |    0 |     0 |          4 |         4 |  0.00 |
++------------------+------+-------+------------+-----------+-------+
+
+
+6. CLOCK
+--------
+
++------------+------+-------+------------+-----------+-------+
+|  Site Type | Used | Fixed | Prohibited | Available | Util% |
++------------+------+-------+------------+-----------+-------+
+| BUFGCE     |    0 |     0 |          0 |       216 |  0.00 |
+| BUFGCE_DIV |    0 |     0 |          0 |        32 |  0.00 |
+| BUFG_GT    |    0 |     0 |          0 |       312 |  0.00 |
+| BUFG_PS    |    1 |     0 |          0 |        72 |  1.39 |
+| BUFGCTRL*  |    0 |     0 |          0 |        64 |  0.00 |
+| PLL        |    0 |     0 |          0 |        16 |  0.00 |
+| MMCM       |    0 |     0 |          0 |         8 |  0.00 |
++------------+------+-------+------------+-----------+-------+
+* Note: Each used BUFGCTRL counts as two GLOBAL CLOCK BUFFERs. This table does not include global clocking resources, only buffer cell usage. See the Clock Utilization Report (report_clock_utilization) for detailed accounting of global clocking resource availability.
+
+
+7. ADVANCED
+-----------
+
++-----------------+------+-------+------------+-----------+--------+
+|    Site Type    | Used | Fixed | Prohibited | Available |  Util% |
++-----------------+------+-------+------------+-----------+--------+
+| CMACE4          |    0 |     0 |          0 |         2 |   0.00 |
+| FE              |    0 |     0 |          0 |         8 |   0.00 |
+| GTYE4_CHANNEL   |    0 |     0 |          0 |        16 |   0.00 |
+| GTYE4_COMMON    |    0 |     0 |          0 |         4 |   0.00 |
+| ILKNE4          |    0 |     0 |          0 |         1 |   0.00 |
+| OBUFDS_GTE4     |    0 |     0 |          0 |         8 |   0.00 |
+| OBUFDS_GTE4_ADV |    0 |     0 |          0 |         8 |   0.00 |
+| PCIE4CE4        |    0 |     0 |          0 |         2 |   0.00 |
+| PS8             |    1 |     0 |          0 |         1 | 100.00 |
+| RFADC           |    0 |     0 |          0 |         4 |   0.00 |
+| RFDAC           |    0 |     0 |          0 |         4 |   0.00 |
+| SYSMONE4        |    0 |     0 |          0 |         1 |   0.00 |
+| RFADC_13B4W_M0  |    0 |     0 |          0 |         4 |   0.00 |
++-----------------+------+-------+------------+-----------+--------+
+
+
+8. CONFIGURATION
+----------------
+
++-------------+------+-------+------------+-----------+-------+
+|  Site Type  | Used | Fixed | Prohibited | Available | Util% |
++-------------+------+-------+------------+-----------+-------+
+| BSCANE2     |    0 |     0 |          0 |         4 |  0.00 |
+| DNA_PORTE2  |    0 |     0 |          0 |         1 |  0.00 |
+| EFUSE_USR   |    0 |     0 |          0 |         1 |  0.00 |
+| FRAME_ECCE4 |    0 |     0 |          0 |         1 |  0.00 |
+| ICAPE3      |    0 |     0 |          0 |         2 |  0.00 |
+| MASTER_JTAG |    0 |     0 |          0 |         1 |  0.00 |
+| STARTUPE3   |    0 |     0 |          0 |         1 |  0.00 |
++-------------+------+-------+------------+-----------+-------+
+
+
+9. Primitives
+-------------
+
++----------+--------+---------------------+
+| Ref Name |  Used  | Functional Category |
++----------+--------+---------------------+
+| FDRE     | 413844 |            Register |
+| LUT3     | 106335 |                 CLB |
+| LUT6     | 100619 |                 CLB |
+| LUT4     |  70987 |                 CLB |
+| LUT5     |  61315 |                 CLB |
+| RAMD32   |  52878 |                 CLB |
+| LUT2     |  46820 |                 CLB |
+| SRL16E   |  15090 |                 CLB |
+| FDSE     |  14483 |            Register |
+| LUT1     |  14041 |                 CLB |
+| RAMS32   |   7554 |                 CLB |
+| MUXF7    |   6870 |                 CLB |
+| SRLC32E  |   4732 |                 CLB |
+| CARRY8   |   3728 |                 CLB |
+| FDCE     |   2688 |            Register |
+| MUXF8    |   1015 |                 CLB |
+| DSP48E2  |    960 |          Arithmetic |
+| RAMB36E2 |    576 |            BLOCKRAM |
+| RAMB18E2 |    544 |            BLOCKRAM |
+| PS8      |      1 |            Advanced |
+| BUFG_PS  |      1 |               Clock |
++----------+--------+---------------------+
+
+
+10. Black Boxes
+---------------
+
++----------+------+
+| Ref Name | Used |
++----------+------+
+
+
+11. Instantiated Netlists
+-------------------------
+
++------------------------------+------+
+|           Ref Name           | Used |
++------------------------------+------+
+| design_1_zynq_ultra_ps_e_0_0 |    1 |
+| design_1_xbar_9              |    1 |
+| design_1_xbar_8              |    1 |
+| design_1_xbar_16             |    1 |
+| design_1_xbar_15             |    1 |
+| design_1_xbar_14             |    1 |
+| design_1_xbar_12             |    1 |
+| design_1_xbar_11             |    1 |
+| design_1_xbar_10             |    1 |
+| design_1_smartconnect_0_9    |    1 |
+| design_1_smartconnect_0_8    |    1 |
+| design_1_smartconnect_0_7    |    1 |
+| design_1_smartconnect_0_5    |    1 |
+| design_1_smartconnect_0_4    |    1 |
+| design_1_smartconnect_0_3    |    1 |
+| design_1_smartconnect_0_2    |    1 |
+| design_1_smartconnect_0_11   |    1 |
+| design_1_smartconnect_0_10   |    1 |
+| design_1_smartconnect_0_1    |    1 |
+| design_1_smartconnect_0_0    |    1 |
+| design_1_rst_ps8_0_96M_1     |    1 |
+| design_1_blk_mem_gen_0_67    |    1 |
+| design_1_blk_mem_gen_0_66    |    1 |
+| design_1_blk_mem_gen_0_65    |    1 |
+| design_1_blk_mem_gen_0_64    |    1 |
+| design_1_blk_mem_gen_0_63    |    1 |
+| design_1_blk_mem_gen_0_62    |    1 |
+| design_1_blk_mem_gen_0_61    |    1 |
+| design_1_blk_mem_gen_0_60    |    1 |
+| design_1_blk_mem_gen_0_59    |    1 |
+| design_1_blk_mem_gen_0_58    |    1 |
+| design_1_blk_mem_gen_0_57    |    1 |
+| design_1_blk_mem_gen_0_56    |    1 |
+| design_1_blk_mem_gen_0_51    |    1 |
+| design_1_blk_mem_gen_0_50    |    1 |
+| design_1_blk_mem_gen_0_49    |    1 |
+| design_1_blk_mem_gen_0_48    |    1 |
+| design_1_blk_mem_gen_0_47    |    1 |
+| design_1_blk_mem_gen_0_46    |    1 |
+| design_1_blk_mem_gen_0_45    |    1 |
+| design_1_blk_mem_gen_0_44    |    1 |
+| design_1_blk_mem_gen_0_43    |    1 |
+| design_1_blk_mem_gen_0_42    |    1 |
+| design_1_blk_mem_gen_0_41    |    1 |
+| design_1_blk_mem_gen_0_40    |    1 |
+| design_1_blk_mem_gen_0_39    |    1 |
+| design_1_blk_mem_gen_0_38    |    1 |
+| design_1_blk_mem_gen_0_37    |    1 |
+| design_1_blk_mem_gen_0_36    |    1 |
+| design_1_blk_mem_gen_0_35    |    1 |
+| design_1_blk_mem_gen_0_34    |    1 |
+| design_1_blk_mem_gen_0_33    |    1 |
+| design_1_blk_mem_gen_0_32    |    1 |
+| design_1_axi_dma_1_66        |    1 |
+| design_1_axi_dma_1_65        |    1 |
+| design_1_axi_dma_1_64        |    1 |
+| design_1_axi_dma_1_63        |    1 |
+| design_1_axi_dma_1_62        |    1 |
+| design_1_axi_dma_1_61        |    1 |
+| design_1_axi_dma_1_60        |    1 |
+| design_1_axi_dma_1_59        |    1 |
+| design_1_axi_dma_1_58        |    1 |
+| design_1_axi_dma_1_57        |    1 |
+| design_1_axi_dma_1_56        |    1 |
+| design_1_axi_dma_1_55        |    1 |
+| design_1_axi_dma_1_50        |    1 |
+| design_1_axi_dma_1_49        |    1 |
+| design_1_axi_dma_1_48        |    1 |
+| design_1_axi_dma_1_47        |    1 |
+| design_1_axi_dma_1_46        |    1 |
+| design_1_axi_dma_1_45        |    1 |
+| design_1_axi_dma_1_44        |    1 |
+| design_1_axi_dma_1_43        |    1 |
+| design_1_axi_dma_1_42        |    1 |
+| design_1_axi_dma_1_41        |    1 |
+| design_1_axi_dma_1_40        |    1 |
+| design_1_axi_dma_1_39        |    1 |
+| design_1_axi_dma_1_38        |    1 |
+| design_1_axi_dma_1_37        |    1 |
+| design_1_axi_dma_1_36        |    1 |
+| design_1_axi_dma_1_35        |    1 |
+| design_1_axi_dma_1_34        |    1 |
+| design_1_axi_dma_1_33        |    1 |
+| design_1_axi_dma_1_32        |    1 |
+| design_1_axi_dma_1_31        |    1 |
+| design_1_axi_dma_0_68        |    1 |
+| design_1_axi_dma_0_67        |    1 |
+| design_1_axi_dma_0_66        |    1 |
+| design_1_axi_dma_0_65        |    1 |
+| design_1_axi_dma_0_64        |    1 |
+| design_1_axi_dma_0_63        |    1 |
+| design_1_axi_dma_0_62        |    1 |
+| design_1_axi_dma_0_61        |    1 |
+| design_1_axi_dma_0_60        |    1 |
+| design_1_axi_dma_0_59        |    1 |
+| design_1_axi_dma_0_58        |    1 |
+| design_1_axi_dma_0_57        |    1 |
+| design_1_axi_dma_0_52        |    1 |
+| design_1_axi_dma_0_51        |    1 |
+| design_1_axi_dma_0_50        |    1 |
+| design_1_axi_dma_0_49        |    1 |
+| design_1_axi_dma_0_48        |    1 |
+| design_1_axi_dma_0_47        |    1 |
+| design_1_axi_dma_0_46        |    1 |
+| design_1_axi_dma_0_45        |    1 |
+| design_1_axi_dma_0_44        |    1 |
+| design_1_axi_dma_0_43        |    1 |
+| design_1_axi_dma_0_42        |    1 |
+| design_1_axi_dma_0_41        |    1 |
+| design_1_axi_dma_0_40        |    1 |
+| design_1_axi_dma_0_39        |    1 |
+| design_1_axi_dma_0_38        |    1 |
+| design_1_axi_dma_0_37        |    1 |
+| design_1_axi_dma_0_36        |    1 |
+| design_1_axi_dma_0_35        |    1 |
+| design_1_axi_dma_0_34        |    1 |
+| design_1_axi_dma_0_33        |    1 |
+| design_1_axi_bram_ctrl_0_67  |    1 |
+| design_1_axi_bram_ctrl_0_66  |    1 |
+| design_1_axi_bram_ctrl_0_65  |    1 |
+| design_1_axi_bram_ctrl_0_64  |    1 |
+| design_1_axi_bram_ctrl_0_63  |    1 |
+| design_1_axi_bram_ctrl_0_62  |    1 |
+| design_1_axi_bram_ctrl_0_61  |    1 |
+| design_1_axi_bram_ctrl_0_60  |    1 |
+| design_1_axi_bram_ctrl_0_59  |    1 |
+| design_1_axi_bram_ctrl_0_58  |    1 |
+| design_1_axi_bram_ctrl_0_57  |    1 |
+| design_1_axi_bram_ctrl_0_56  |    1 |
+| design_1_axi_bram_ctrl_0_51  |    1 |
+| design_1_axi_bram_ctrl_0_50  |    1 |
+| design_1_axi_bram_ctrl_0_49  |    1 |
+| design_1_axi_bram_ctrl_0_48  |    1 |
+| design_1_axi_bram_ctrl_0_47  |    1 |
+| design_1_axi_bram_ctrl_0_46  |    1 |
+| design_1_axi_bram_ctrl_0_45  |    1 |
+| design_1_axi_bram_ctrl_0_44  |    1 |
+| design_1_axi_bram_ctrl_0_43  |    1 |
+| design_1_axi_bram_ctrl_0_42  |    1 |
+| design_1_axi_bram_ctrl_0_41  |    1 |
+| design_1_axi_bram_ctrl_0_40  |    1 |
+| design_1_axi_bram_ctrl_0_39  |    1 |
+| design_1_axi_bram_ctrl_0_38  |    1 |
+| design_1_axi_bram_ctrl_0_37  |    1 |
+| design_1_axi_bram_ctrl_0_36  |    1 |
+| design_1_axi_bram_ctrl_0_35  |    1 |
+| design_1_axi_bram_ctrl_0_34  |    1 |
+| design_1_axi_bram_ctrl_0_33  |    1 |
+| design_1_axi_bram_ctrl_0_32  |    1 |
+| design_1_auto_us_99          |    1 |
+| design_1_auto_us_98          |    1 |
+| design_1_auto_us_97          |    1 |
+| design_1_auto_us_96          |    1 |
+| design_1_auto_us_95          |    1 |
+| design_1_auto_us_94          |    1 |
+| design_1_auto_us_93          |    1 |
+| design_1_auto_us_92          |    1 |
+| design_1_auto_us_91          |    1 |
+| design_1_auto_us_90          |    1 |
+| design_1_auto_us_9           |    1 |
+| design_1_auto_us_89          |    1 |
+| design_1_auto_us_88          |    1 |
+| design_1_auto_us_87          |    1 |
+| design_1_auto_us_86          |    1 |
+| design_1_auto_us_85          |    1 |
+| design_1_auto_us_84          |    1 |
+| design_1_auto_us_83          |    1 |
+| design_1_auto_us_82          |    1 |
+| design_1_auto_us_81          |    1 |
+| design_1_auto_us_80          |    1 |
+| design_1_auto_us_8           |    1 |
+| design_1_auto_us_79          |    1 |
+| design_1_auto_us_78          |    1 |
+| design_1_auto_us_77          |    1 |
+| design_1_auto_us_76          |    1 |
+| design_1_auto_us_75          |    1 |
+| design_1_auto_us_74          |    1 |
+| design_1_auto_us_73          |    1 |
+| design_1_auto_us_72          |    1 |
+| design_1_auto_us_71          |    1 |
+| design_1_auto_us_70          |    1 |
+| design_1_auto_us_7           |    1 |
+| design_1_auto_us_69          |    1 |
+| design_1_auto_us_68          |    1 |
+| design_1_auto_us_67          |    1 |
+| design_1_auto_us_66          |    1 |
+| design_1_auto_us_65          |    1 |
+| design_1_auto_us_64          |    1 |
+| design_1_auto_us_63          |    1 |
+| design_1_auto_us_62          |    1 |
+| design_1_auto_us_61          |    1 |
+| design_1_auto_us_60          |    1 |
+| design_1_auto_us_6           |    1 |
+| design_1_auto_us_59          |    1 |
+| design_1_auto_us_58          |    1 |
+| design_1_auto_us_57          |    1 |
+| design_1_auto_us_56          |    1 |
+| design_1_auto_us_55          |    1 |
+| design_1_auto_us_54          |    1 |
+| design_1_auto_us_53          |    1 |
+| design_1_auto_us_52          |    1 |
+| design_1_auto_us_51          |    1 |
+| design_1_auto_us_50          |    1 |
+| design_1_auto_us_5           |    1 |
+| design_1_auto_us_49          |    1 |
+| design_1_auto_us_48          |    1 |
+| design_1_auto_us_47          |    1 |
+| design_1_auto_us_46          |    1 |
+| design_1_auto_us_45          |    1 |
+| design_1_auto_us_44          |    1 |
+| design_1_auto_us_43          |    1 |
+| design_1_auto_us_42          |    1 |
+| design_1_auto_us_41          |    1 |
+| design_1_auto_us_40          |    1 |
+| design_1_auto_us_4           |    1 |
+| design_1_auto_us_39          |    1 |
+| design_1_auto_us_38          |    1 |
+| design_1_auto_us_37          |    1 |
+| design_1_auto_us_36          |    1 |
+| design_1_auto_us_35          |    1 |
+| design_1_auto_us_34          |    1 |
+| design_1_auto_us_33          |    1 |
+| design_1_auto_us_32          |    1 |
+| design_1_auto_us_31          |    1 |
+| design_1_auto_us_30          |    1 |
+| design_1_auto_us_3           |    1 |
+| design_1_auto_us_29          |    1 |
+| design_1_auto_us_28          |    1 |
+| design_1_auto_us_27          |    1 |
+| design_1_auto_us_26          |    1 |
+| design_1_auto_us_25          |    1 |
+| design_1_auto_us_24          |    1 |
+| design_1_auto_us_23          |    1 |
+| design_1_auto_us_22          |    1 |
+| design_1_auto_us_21          |    1 |
+| design_1_auto_us_20          |    1 |
+| design_1_auto_us_2           |    1 |
+| design_1_auto_us_19          |    1 |
+| design_1_auto_us_18          |    1 |
+| design_1_auto_us_17          |    1 |
+| design_1_auto_us_16          |    1 |
+| design_1_auto_us_15          |    1 |
+| design_1_auto_us_14          |    1 |
+| design_1_auto_us_13          |    1 |
+| design_1_auto_us_127         |    1 |
+| design_1_auto_us_126         |    1 |
+| design_1_auto_us_125         |    1 |
+| design_1_auto_us_124         |    1 |
+| design_1_auto_us_123         |    1 |
+| design_1_auto_us_122         |    1 |
+| design_1_auto_us_121         |    1 |
+| design_1_auto_us_120         |    1 |
+| design_1_auto_us_12          |    1 |
+| design_1_auto_us_119         |    1 |
+| design_1_auto_us_118         |    1 |
+| design_1_auto_us_117         |    1 |
+| design_1_auto_us_116         |    1 |
+| design_1_auto_us_115         |    1 |
+| design_1_auto_us_114         |    1 |
+| design_1_auto_us_113         |    1 |
+| design_1_auto_us_112         |    1 |
+| design_1_auto_us_111         |    1 |
+| design_1_auto_us_110         |    1 |
+| design_1_auto_us_11          |    1 |
+| design_1_auto_us_109         |    1 |
+| design_1_auto_us_108         |    1 |
+| design_1_auto_us_107         |    1 |
+| design_1_auto_us_106         |    1 |
+| design_1_auto_us_105         |    1 |
+| design_1_auto_us_104         |    1 |
+| design_1_auto_us_103         |    1 |
+| design_1_auto_us_102         |    1 |
+| design_1_auto_us_101         |    1 |
+| design_1_auto_us_100         |    1 |
+| design_1_auto_us_10          |    1 |
+| design_1_auto_us_1           |    1 |
+| design_1_auto_us_0           |    1 |
+| design_1_CAMC_0_67           |    1 |
+| design_1_CAMC_0_66           |    1 |
+| design_1_CAMC_0_65           |    1 |
+| design_1_CAMC_0_64           |    1 |
+| design_1_CAMC_0_63           |    1 |
+| design_1_CAMC_0_62           |    1 |
+| design_1_CAMC_0_61           |    1 |
+| design_1_CAMC_0_60           |    1 |
+| design_1_CAMC_0_59           |    1 |
+| design_1_CAMC_0_58           |    1 |
+| design_1_CAMC_0_57           |    1 |
+| design_1_CAMC_0_56           |    1 |
+| design_1_CAMC_0_51           |    1 |
+| design_1_CAMC_0_50           |    1 |
+| design_1_CAMC_0_49           |    1 |
+| design_1_CAMC_0_48           |    1 |
+| design_1_CAMC_0_47           |    1 |
+| design_1_CAMC_0_46           |    1 |
+| design_1_CAMC_0_45           |    1 |
+| design_1_CAMC_0_44           |    1 |
+| design_1_CAMC_0_43           |    1 |
+| design_1_CAMC_0_42           |    1 |
+| design_1_CAMC_0_41           |    1 |
+| design_1_CAMC_0_40           |    1 |
+| design_1_CAMC_0_39           |    1 |
+| design_1_CAMC_0_38           |    1 |
+| design_1_CAMC_0_37           |    1 |
+| design_1_CAMC_0_36           |    1 |
+| design_1_CAMC_0_35           |    1 |
+| design_1_CAMC_0_34           |    1 |
+| design_1_CAMC_0_33           |    1 |
+| design_1_CAMC_0_32           |    1 |
++------------------------------+------+
+
+
