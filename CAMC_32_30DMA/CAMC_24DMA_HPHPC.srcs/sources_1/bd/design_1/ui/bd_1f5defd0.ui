@@ -1,0 +1,144 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.295591",
+   "Default View_TopLeft":"365,1211",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.7.1 2023-07-26 3bc4126617 VDI=43 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace inst OnePort -pg 1 -lvl 6 -x 4250 -y 690 -defaultsOSRD
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 4 -x 2870 -y 1110 -defaultsOSRD
+preplace inst OnePort1 -pg 1 -lvl 3 -x 920 -y 570 -defaultsOSRD
+preplace inst OnePort2 -pg 1 -lvl 3 -x 920 -y 160 -defaultsOSRD
+preplace inst OnePort3 -pg 1 -lvl 3 -x 920 -y 910 -defaultsOSRD
+preplace inst OnePort4 -pg 1 -lvl 3 -x 920 -y 1452 -defaultsOSRD
+preplace inst OnePort5 -pg 1 -lvl 3 -x 920 -y 2784 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 5 -x 3480 -y 670 -defaultsOSRD
+preplace inst rst_ps8_0_96M -pg 1 -lvl 2 -x 220 -y 1340 -defaultsOSRD
+preplace inst CAMC_0 -pg 1 -lvl 6 -x 4250 -y 1730 -defaultsOSRD
+preplace inst axi_dma_0 -pg 1 -lvl 5 -x 3480 -y 1510 -defaultsOSRD
+preplace inst axi_dma_1 -pg 1 -lvl 5 -x 3480 -y 1750 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 7 -x 4580 -y 1690 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 6 -x 4250 -y 2160 -defaultsOSRD
+preplace inst OnePort4|CAMC_0 -pg 1 -lvl 2 -x 1510 -y 1592 -defaultsOSRD
+preplace inst OnePort4|axi_bram_ctrl_0 -pg 1 -lvl 2 -x 1510 -y 1412 -defaultsOSRD
+preplace inst OnePort4|CAMC_1 -pg 1 -lvl 2 -x 1510 -y 2092 -defaultsOSRD
+preplace inst OnePort4|axi_bram_ctrl_1 -pg 1 -lvl 2 -x 1510 -y 1912 -defaultsOSRD
+preplace inst OnePort4|axi_dma_0 -pg 1 -lvl 1 -x 1070 -y 1612 -defaultsOSRD
+preplace inst OnePort4|axi_dma_1 -pg 1 -lvl 1 -x 1070 -y 1882 -defaultsOSRD
+preplace inst OnePort4|axi_dma_2 -pg 1 -lvl 1 -x 1070 -y 2132 -defaultsOSRD
+preplace inst OnePort4|axi_dma_3 -pg 1 -lvl 1 -x 1070 -y 2372 -defaultsOSRD
+preplace inst OnePort4|blk_mem_gen_0 -pg 1 -lvl 3 -x 1830 -y 1552 -defaultsOSRD
+preplace inst OnePort4|blk_mem_gen_1 -pg 1 -lvl 3 -x 1830 -y 1922 -defaultsOSRD
+preplace inst OnePort4|axi_interconnect_0 -pg 1 -lvl 4 -x 2150 -y 2052 -defaultsOSRD
+preplace netloc rst_ps8_0_96M_peripheral_aresetn 1 2 4 470 1050 2420J 890 3280 1290 4080J
+preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 1 5 50 1240 460 1070 2540 900 3250 90 4010J
+preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 1 4 40 730 NJ 730 NJ 730 3180
+preplace netloc OnePort1_M00_AXI 1 3 1 2480 570n
+preplace netloc OnePort2_M00_AXI 1 3 1 2490 160n
+preplace netloc OnePort3_M00_AXI 1 3 1 2430 910n
+preplace netloc OnePort4_M00_AXI 1 3 1 2490 1050n
+preplace netloc OnePort5_M00_AXI 1 3 1 2550 1070n
+preplace netloc OnePort_M00_AXI 1 3 4 2550 -190 NJ -190 NJ -190 4450
+preplace netloc axi_smc_M00_AXI 1 5 1 4080 170n
+preplace netloc axi_smc_M01_AXI 1 5 1 4070 190n
+preplace netloc axi_smc_M02_AXI 1 2 4 500 -170 NJ -170 NJ -170 3820
+preplace netloc axi_smc_M03_AXI 1 2 4 670 300 NJ 300 3190J 110 3670
+preplace netloc axi_smc_M04_AXI 1 2 4 700 -160 NJ -160 NJ -160 3660
+preplace netloc axi_smc_M05_AXI 1 2 4 520 -150 NJ -150 NJ -150 3840
+preplace netloc axi_smc_M06_AXI 1 2 4 680 310 NJ 310 3180J 100 3860
+preplace netloc axi_smc_M07_AXI 1 2 4 540 -140 NJ -140 NJ -140 3680
+preplace netloc axi_smc_M08_AXI 1 2 4 700 2520 NJ 2520 NJ 2520 3850
+preplace netloc axi_smc_M09_AXI 1 2 4 680 2530 NJ 2530 NJ 2530 3820
+preplace netloc axi_smc_M10_AXI 1 2 4 690 2550 NJ 2550 NJ 2550 3860
+preplace netloc axi_smc_M11_AXI 1 2 4 710 2560 NJ 2560 NJ 2560 3840
+preplace netloc axi_smc_M12_AXI 1 5 1 4060 410n
+preplace netloc axi_smc_M13_AXI 1 5 1 4050 430n
+preplace netloc axi_smc_M14_AXI 1 2 4 560 -130 NJ -130 NJ -130 3690
+preplace netloc axi_smc_M15_AXI 1 2 4 580 -120 NJ -120 NJ -120 3700
+preplace netloc axi_smc_M16_AXI 1 2 4 680 -110 NJ -110 NJ -110 3710
+preplace netloc axi_smc_M17_AXI 1 2 4 710 -100 NJ -100 NJ -100 3780
+preplace netloc axi_smc_M18_AXI 1 2 4 490 -90 NJ -90 NJ -90 3790
+preplace netloc axi_smc_M19_AXI 1 2 4 510 -80 NJ -80 NJ -80 3800
+preplace netloc axi_smc_M20_AXI 1 2 4 670 2540 NJ 2540 NJ 2540 3800
+preplace netloc axi_smc_M21_AXI 1 2 4 530 -70 NJ -70 NJ -70 3810
+preplace netloc axi_smc_M22_AXI 1 2 4 640 1262 2470J 1310 NJ 1310 3790
+preplace netloc axi_smc_M23_AXI 1 2 4 600 1252 2460J 1330 NJ 1330 3780
+preplace netloc axi_smc_M24_AXI 1 5 1 4040 650n
+preplace netloc axi_smc_M25_AXI 1 5 1 4030 670n
+preplace netloc axi_smc_M26_AXI 1 5 1 4020 690n
+preplace netloc axi_smc_M27_AXI 1 5 1 3930 710n
+preplace netloc axi_smc_M28_AXI 1 2 4 550 -60 NJ -60 NJ -60 3830
+preplace netloc axi_smc_M29_AXI 1 2 4 570 -50 NJ -50 NJ -50 3870
+preplace netloc axi_smc_M30_AXI 1 2 4 700 710 NJ 710 3310J 1230 3730
+preplace netloc axi_smc_M31_AXI 1 2 4 690 720 NJ 720 3270J 1240 3710
+preplace netloc axi_smc_M32_AXI 1 2 4 590 -40 NJ -40 NJ -40 3880
+preplace netloc axi_smc_M33_AXI 1 2 4 600 -30 NJ -30 NJ -30 3900
+preplace netloc axi_smc_M34_AXI 1 2 4 610 -20 NJ -20 NJ -20 3920
+preplace netloc axi_smc_M35_AXI 1 2 4 620 -10 2480J 0 NJ 0 3650
+preplace netloc axi_smc_M36_AXI 1 2 4 660 10 NJ 10 NJ 10 3720
+preplace netloc axi_smc_M37_AXI 1 2 4 670 740 NJ 740 3200J 1280 3670
+preplace netloc axi_smc_M38_AXI 1 2 4 710 760 NJ 760 3210J 1250 3700
+preplace netloc axi_smc_M39_AXI 1 2 4 700 1242 2480J 1320 NJ 1320 3680
+preplace netloc axi_smc_M40_AXI 1 2 4 690 750 NJ 750 3220J 1260 3690
+preplace netloc axi_smc_M41_AXI 1 2 4 630 0 2420J 20 NJ 20 3890
+preplace netloc axi_smc_M42_AXI 1 2 4 480 -180 2490J -10 NJ -10 3910
+preplace netloc axi_smc_M43_AXI 1 2 4 710 1060 2460J 910 3190J 1270 3660
+preplace netloc axi_smc_M44_AXI 1 2 4 610 1272 2450J 1340 NJ 1340 3770
+preplace netloc axi_smc_M45_AXI 1 2 4 660 1302 2430J 1350 NJ 1350 3760
+preplace netloc axi_smc_M46_AXI 1 2 4 620 1282 2440J 1360 NJ 1360 3750
+preplace netloc axi_smc_M47_AXI 1 2 4 650 1292 2420J 1370 NJ 1370 3740
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_LPD 1 4 1 3260 650n
+preplace netloc axi_dma_0_M_AXIS_MM2S 1 5 1 3910 1490n
+preplace netloc axi_dma_1_M_AXIS_MM2S 1 5 1 N 1730
+preplace netloc CAMC_0_result_PORTA 1 6 1 N 1700
+preplace netloc CAMC_0_outStream_1 1 4 3 3310 1390 NJ 1390 4430
+preplace netloc CAMC_0_outStream_2 1 4 3 3310 1630 NJ 1630 4420
+preplace netloc axi_dma_0_M_AXI_MM2S 1 5 1 3920 1450n
+preplace netloc axi_dma_0_M_AXI_S2MM 1 5 1 3900 1470n
+preplace netloc S02_AXI_1 1 5 1 3890 1690n
+preplace netloc axi_dma_1_M_AXI_S2MM 1 5 1 3870 1710n
+preplace netloc axi_interconnect_0_M00_AXI 1 3 4 2560 -180 NJ -180 NJ -180 4440
+preplace netloc axi_smc_M48_AXI 1 4 2 3290 1300 3650
+preplace netloc axi_smc_M49_AXI 1 4 2 3300 1380 3720
+preplace netloc axi_smc_M50_AXI 1 5 1 3930 1170n
+preplace netloc OnePort4|s_axi_aclk_1 1 0 4 880 1472 1290 2242 1690J 2352 1980
+preplace netloc OnePort4|s_axi_aresetn_1 1 0 4 860 1742 1300 2232 1700J 2342 2000
+preplace netloc OnePort4|CAMC_0_outStream_1 1 0 3 900 1492 NJ 1492 1680
+preplace netloc OnePort4|CAMC_0_outStream_2 1 0 3 900 1732 NJ 1732 1680
+preplace netloc OnePort4|CAMC_0_outStream_3 1 0 3 900 2002 1310J 1992 1680
+preplace netloc OnePort4|CAMC_0_outStream_4 1 0 3 900 2252 NJ 2252 1680
+preplace netloc OnePort4|CAMC_0_result_PORTA 1 2 1 N 1562
+preplace netloc OnePort4|CAMC_0_result_PORTA1 1 2 1 1700 1932n
+preplace netloc OnePort4|Conn1 1 4 1 N 2052
+preplace netloc OnePort4|Conn2 1 0 2 NJ 1392 N
+preplace netloc OnePort4|Conn3 1 0 2 870J 1752 1270
+preplace netloc OnePort4|Conn4 1 0 2 NJ 1482 1330
+preplace netloc OnePort4|Conn5 1 0 2 NJ 2012 1250
+preplace netloc OnePort4|Conn6 1 0 1 850 1562n
+preplace netloc OnePort4|Conn7 1 0 1 890 1832n
+preplace netloc OnePort4|Conn8 1 0 1 N 2082
+preplace netloc OnePort4|Conn9 1 0 1 N 2322
+preplace netloc OnePort4|S02_AXI_1 1 1 3 1250J 1772 NJ 1772 2000
+preplace netloc OnePort4|S05_AXI_1 1 1 3 1330J 1832 NJ 1832 1960
+preplace netloc OnePort4|S07_AXI_1 1 1 3 NJ 2332 NJ 2332 1960
+preplace netloc OnePort4|axi_bram_ctrl_0_BRAM_PORTA 1 2 1 1700 1412n
+preplace netloc OnePort4|axi_bram_ctrl_0_BRAM_PORTA1 1 2 1 N 1912
+preplace netloc OnePort4|axi_dma_0_M_AXIS_MM2S 1 1 1 1250 1572n
+preplace netloc OnePort4|axi_dma_0_M_AXIS_MM2S1 1 1 1 1260 2072n
+preplace netloc OnePort4|axi_dma_0_M_AXI_MM2S 1 1 3 1320J 1782 NJ 1782 N
+preplace netloc OnePort4|axi_dma_0_M_AXI_S2MM 1 1 3 1240J 1792 NJ 1792 1990
+preplace netloc OnePort4|axi_dma_1_M_AXIS_MM2S 1 1 1 1260 1592n
+preplace netloc OnePort4|axi_dma_1_M_AXIS_MM2S1 1 1 1 1340 2092n
+preplace netloc OnePort4|axi_dma_1_M_AXI_S2MM 1 1 3 1280J 1822 1700J 1842 N
+preplace netloc OnePort4|axi_dma_2_M_AXI_MM2S 1 1 3 1240J 1802 NJ 1802 1980
+preplace netloc OnePort4|axi_dma_3_M_AXI_MM2S 1 1 3 1320J 1812 NJ 1812 1970
+levelinfo -pg 1 0 20 220 920 2870 3480 4250 4580 4710
+levelinfo -hier OnePort4 * 1070 1510 1830 2150 *
+pagesize -pg 1 -db -bbox -sgen -1200 -200 4710 2940
+pagesize -hier OnePort4 -db -bbox -sgen 820 1332 2330 2492
+"
+}
+{
+   "da_axi4_cnt":"51",
+   "da_clkrst_cnt":"66"
+}
